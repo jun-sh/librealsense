@@ -1,0 +1,977 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|x64">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|x64">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{94601B9D-8843-3F66-99C2-8F3A7FA2A320}</ProjectGuid>
+    <WindowsTargetPlatformVersion>10.0.18362.0</WindowsTargetPlatformVersion>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>x64</Platform>
+    <ProjectName>libusb</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>D:\Desktop\librealsense\realsense2;D:\Desktop\librealsense\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>D:\Desktop\librealsense\realsense2;D:\Desktop\librealsense\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>D:\Desktop\librealsense\realsense2;D:\Desktop\librealsense\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>D:\Desktop\librealsense\realsense2;D:\Desktop\librealsense\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\Desktop\librealsense\build\CMakeFiles\5c7dce35ec7dbd0b69c485a7cfed03ce\libusb-mkdir.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Creating directories for 'libusb'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory D:/Desktop/librealsense/build/third-party/libusb
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory D:/Desktop/librealsense/build/libusb-prefix/src/libusb-build
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory D:/Desktop/librealsense/build/libusb-prefix
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory D:/Desktop/librealsense/build/libusb-prefix/tmp
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory D:/Desktop/librealsense/build/libusb-prefix/src/libusb-stamp/$(Configuration)
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory D:/Desktop/librealsense/build/libusb-prefix/src
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory D:/Desktop/librealsense/build/libusb-prefix/src/libusb-stamp
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch D:/Desktop/librealsense/build/libusb-prefix/src/libusb-stamp/$(Configuration)/libusb-mkdir
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\Desktop\librealsense\build\libusb-prefix\src\libusb-stamp\$(Configuration)\libusb-mkdir</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Creating directories for 'libusb'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory D:/Desktop/librealsense/build/third-party/libusb
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory D:/Desktop/librealsense/build/libusb-prefix/src/libusb-build
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory D:/Desktop/librealsense/build/libusb-prefix
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory D:/Desktop/librealsense/build/libusb-prefix/tmp
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory D:/Desktop/librealsense/build/libusb-prefix/src/libusb-stamp/$(Configuration)
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory D:/Desktop/librealsense/build/libusb-prefix/src
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory D:/Desktop/librealsense/build/libusb-prefix/src/libusb-stamp
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch D:/Desktop/librealsense/build/libusb-prefix/src/libusb-stamp/$(Configuration)/libusb-mkdir
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\Desktop\librealsense\build\libusb-prefix\src\libusb-stamp\$(Configuration)\libusb-mkdir</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Creating directories for 'libusb'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory D:/Desktop/librealsense/build/third-party/libusb
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory D:/Desktop/librealsense/build/libusb-prefix/src/libusb-build
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory D:/Desktop/librealsense/build/libusb-prefix
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory D:/Desktop/librealsense/build/libusb-prefix/tmp
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory D:/Desktop/librealsense/build/libusb-prefix/src/libusb-stamp/$(Configuration)
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory D:/Desktop/librealsense/build/libusb-prefix/src
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory D:/Desktop/librealsense/build/libusb-prefix/src/libusb-stamp
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch D:/Desktop/librealsense/build/libusb-prefix/src/libusb-stamp/$(Configuration)/libusb-mkdir
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\Desktop\librealsense\build\libusb-prefix\src\libusb-stamp\$(Configuration)\libusb-mkdir</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Creating directories for 'libusb'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory D:/Desktop/librealsense/build/third-party/libusb
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory D:/Desktop/librealsense/build/libusb-prefix/src/libusb-build
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory D:/Desktop/librealsense/build/libusb-prefix
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory D:/Desktop/librealsense/build/libusb-prefix/tmp
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory D:/Desktop/librealsense/build/libusb-prefix/src/libusb-stamp/$(Configuration)
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory D:/Desktop/librealsense/build/libusb-prefix/src
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory D:/Desktop/librealsense/build/libusb-prefix/src/libusb-stamp
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch D:/Desktop/librealsense/build/libusb-prefix/src/libusb-stamp/$(Configuration)/libusb-mkdir
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\Desktop\librealsense\build\libusb-prefix\src\libusb-stamp\$(Configuration)\libusb-mkdir</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\Desktop\librealsense\build\CMakeFiles\5c7dce35ec7dbd0b69c485a7cfed03ce\libusb-download.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Performing download step (git clone) for 'libusb'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+cd D:\Desktop\librealsense\build\third-party
+if %errorlevel% neq 0 goto :cmEnd
+D:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -P D:/Desktop/librealsense/build/libusb-prefix/tmp/libusb-gitclone.cmake
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch D:/Desktop/librealsense/build/libusb-prefix/src/libusb-stamp/$(Configuration)/libusb-download
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\Desktop\librealsense\build\libusb-prefix\src\libusb-stamp\libusb-gitinfo.txt;D:\Desktop\librealsense\build\libusb-prefix\src\libusb-stamp\$(Configuration)\libusb-mkdir;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\Desktop\librealsense\build\libusb-prefix\src\libusb-stamp\$(Configuration)\libusb-download</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Performing download step (git clone) for 'libusb'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+cd D:\Desktop\librealsense\build\third-party
+if %errorlevel% neq 0 goto :cmEnd
+D:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -P D:/Desktop/librealsense/build/libusb-prefix/tmp/libusb-gitclone.cmake
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch D:/Desktop/librealsense/build/libusb-prefix/src/libusb-stamp/$(Configuration)/libusb-download
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\Desktop\librealsense\build\libusb-prefix\src\libusb-stamp\libusb-gitinfo.txt;D:\Desktop\librealsense\build\libusb-prefix\src\libusb-stamp\$(Configuration)\libusb-mkdir;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\Desktop\librealsense\build\libusb-prefix\src\libusb-stamp\$(Configuration)\libusb-download</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Performing download step (git clone) for 'libusb'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+cd D:\Desktop\librealsense\build\third-party
+if %errorlevel% neq 0 goto :cmEnd
+D:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -P D:/Desktop/librealsense/build/libusb-prefix/tmp/libusb-gitclone.cmake
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch D:/Desktop/librealsense/build/libusb-prefix/src/libusb-stamp/$(Configuration)/libusb-download
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\Desktop\librealsense\build\libusb-prefix\src\libusb-stamp\libusb-gitinfo.txt;D:\Desktop\librealsense\build\libusb-prefix\src\libusb-stamp\$(Configuration)\libusb-mkdir;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\Desktop\librealsense\build\libusb-prefix\src\libusb-stamp\$(Configuration)\libusb-download</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Performing download step (git clone) for 'libusb'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+cd D:\Desktop\librealsense\build\third-party
+if %errorlevel% neq 0 goto :cmEnd
+D:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -P D:/Desktop/librealsense/build/libusb-prefix/tmp/libusb-gitclone.cmake
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch D:/Desktop/librealsense/build/libusb-prefix/src/libusb-stamp/$(Configuration)/libusb-download
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\Desktop\librealsense\build\libusb-prefix\src\libusb-stamp\libusb-gitinfo.txt;D:\Desktop\librealsense\build\libusb-prefix\src\libusb-stamp\$(Configuration)\libusb-mkdir;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\Desktop\librealsense\build\libusb-prefix\src\libusb-stamp\$(Configuration)\libusb-download</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\Desktop\librealsense\build\CMakeFiles\5c7dce35ec7dbd0b69c485a7cfed03ce\libusb-update.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Performing update step for 'libusb'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+cd D:\Desktop\librealsense\build\third-party\libusb
+if %errorlevel% neq 0 goto :cmEnd
+D:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different D:/Desktop/librealsense/third-party/libusb/CMakeLists.txt D:/Desktop/librealsense/build/third-party/libusb/CMakeLists.txt
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\Desktop\librealsense\build\libusb-prefix\src\libusb-stamp\$(Configuration)\libusb-download;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\Desktop\librealsense\build\libusb-prefix\src\libusb-stamp\$(Configuration)\libusb-update</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <VerifyInputsAndOutputsExist Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</VerifyInputsAndOutputsExist>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Performing update step for 'libusb'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+cd D:\Desktop\librealsense\build\third-party\libusb
+if %errorlevel% neq 0 goto :cmEnd
+D:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different D:/Desktop/librealsense/third-party/libusb/CMakeLists.txt D:/Desktop/librealsense/build/third-party/libusb/CMakeLists.txt
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\Desktop\librealsense\build\libusb-prefix\src\libusb-stamp\$(Configuration)\libusb-download;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\Desktop\librealsense\build\libusb-prefix\src\libusb-stamp\$(Configuration)\libusb-update</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <VerifyInputsAndOutputsExist Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</VerifyInputsAndOutputsExist>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Performing update step for 'libusb'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+cd D:\Desktop\librealsense\build\third-party\libusb
+if %errorlevel% neq 0 goto :cmEnd
+D:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different D:/Desktop/librealsense/third-party/libusb/CMakeLists.txt D:/Desktop/librealsense/build/third-party/libusb/CMakeLists.txt
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\Desktop\librealsense\build\libusb-prefix\src\libusb-stamp\$(Configuration)\libusb-download;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\Desktop\librealsense\build\libusb-prefix\src\libusb-stamp\$(Configuration)\libusb-update</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <VerifyInputsAndOutputsExist Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</VerifyInputsAndOutputsExist>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Performing update step for 'libusb'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+cd D:\Desktop\librealsense\build\third-party\libusb
+if %errorlevel% neq 0 goto :cmEnd
+D:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different D:/Desktop/librealsense/third-party/libusb/CMakeLists.txt D:/Desktop/librealsense/build/third-party/libusb/CMakeLists.txt
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\Desktop\librealsense\build\libusb-prefix\src\libusb-stamp\$(Configuration)\libusb-download;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\Desktop\librealsense\build\libusb-prefix\src\libusb-stamp\$(Configuration)\libusb-update</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+      <VerifyInputsAndOutputsExist Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</VerifyInputsAndOutputsExist>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\Desktop\librealsense\build\CMakeFiles\5c7dce35ec7dbd0b69c485a7cfed03ce\libusb-patch.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">No patch step for 'libusb'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+cd D:\Desktop\librealsense\build\third-party\libusb
+if %errorlevel% neq 0 goto :cmEnd
+D:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch D:/Desktop/librealsense/build/libusb-prefix/src/libusb-stamp/$(Configuration)/libusb-patch
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\Desktop\librealsense\build\libusb-prefix\src\libusb-stamp\$(Configuration)\libusb-download;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\Desktop\librealsense\build\libusb-prefix\src\libusb-stamp\$(Configuration)\libusb-patch</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">No patch step for 'libusb'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+cd D:\Desktop\librealsense\build\third-party\libusb
+if %errorlevel% neq 0 goto :cmEnd
+D:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch D:/Desktop/librealsense/build/libusb-prefix/src/libusb-stamp/$(Configuration)/libusb-patch
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\Desktop\librealsense\build\libusb-prefix\src\libusb-stamp\$(Configuration)\libusb-download;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\Desktop\librealsense\build\libusb-prefix\src\libusb-stamp\$(Configuration)\libusb-patch</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">No patch step for 'libusb'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+cd D:\Desktop\librealsense\build\third-party\libusb
+if %errorlevel% neq 0 goto :cmEnd
+D:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch D:/Desktop/librealsense/build/libusb-prefix/src/libusb-stamp/$(Configuration)/libusb-patch
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\Desktop\librealsense\build\libusb-prefix\src\libusb-stamp\$(Configuration)\libusb-download;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\Desktop\librealsense\build\libusb-prefix\src\libusb-stamp\$(Configuration)\libusb-patch</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">No patch step for 'libusb'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+cd D:\Desktop\librealsense\build\third-party\libusb
+if %errorlevel% neq 0 goto :cmEnd
+D:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch D:/Desktop/librealsense/build/libusb-prefix/src/libusb-stamp/$(Configuration)/libusb-patch
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\Desktop\librealsense\build\libusb-prefix\src\libusb-stamp\$(Configuration)\libusb-download;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\Desktop\librealsense\build\libusb-prefix\src\libusb-stamp\$(Configuration)\libusb-patch</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\Desktop\librealsense\build\CMakeFiles\5c7dce35ec7dbd0b69c485a7cfed03ce\libusb-configure.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Performing configure step for 'libusb'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+cd D:\Desktop\librealsense\build\libusb-prefix\src\libusb-build
+if %errorlevel% neq 0 goto :cmEnd
+D:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" "-DCMAKE_CXX_STANDARD_LIBRARIES=kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib" -DCMAKE_TOOLCHAIN_FILE= -DCMAKE_BUILD_TYPE= -DANDROID_ABI= -DANDROID_STL= -DCMAKE_INSTALL_PREFIX=D:/Desktop/librealsense/build/libusb_install "-GVisual Studio 16 2019" -Ax64 "-DCMAKE_GENERATOR_INSTANCE:INTERNAL=C:/Program Files (x86)/Microsoft Visual Studio/2019/Community" D:/Desktop/librealsense/build/third-party/libusb
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch D:/Desktop/librealsense/build/libusb-prefix/src/libusb-stamp/$(Configuration)/libusb-configure
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\Desktop\librealsense\build\libusb-prefix\tmp\libusb-cfgcmd.txt;D:\Desktop\librealsense\build\libusb-prefix\src\libusb-stamp\$(Configuration)\libusb-update;D:\Desktop\librealsense\build\libusb-prefix\src\libusb-stamp\$(Configuration)\libusb-patch;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\Desktop\librealsense\build\libusb-prefix\src\libusb-stamp\$(Configuration)\libusb-configure</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <VerifyInputsAndOutputsExist Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</VerifyInputsAndOutputsExist>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Performing configure step for 'libusb'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+cd D:\Desktop\librealsense\build\libusb-prefix\src\libusb-build
+if %errorlevel% neq 0 goto :cmEnd
+D:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" "-DCMAKE_CXX_STANDARD_LIBRARIES=kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib" -DCMAKE_TOOLCHAIN_FILE= -DCMAKE_BUILD_TYPE= -DANDROID_ABI= -DANDROID_STL= -DCMAKE_INSTALL_PREFIX=D:/Desktop/librealsense/build/libusb_install "-GVisual Studio 16 2019" -Ax64 "-DCMAKE_GENERATOR_INSTANCE:INTERNAL=C:/Program Files (x86)/Microsoft Visual Studio/2019/Community" D:/Desktop/librealsense/build/third-party/libusb
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch D:/Desktop/librealsense/build/libusb-prefix/src/libusb-stamp/$(Configuration)/libusb-configure
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\Desktop\librealsense\build\libusb-prefix\tmp\libusb-cfgcmd.txt;D:\Desktop\librealsense\build\libusb-prefix\src\libusb-stamp\$(Configuration)\libusb-update;D:\Desktop\librealsense\build\libusb-prefix\src\libusb-stamp\$(Configuration)\libusb-patch;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\Desktop\librealsense\build\libusb-prefix\src\libusb-stamp\$(Configuration)\libusb-configure</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <VerifyInputsAndOutputsExist Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</VerifyInputsAndOutputsExist>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Performing configure step for 'libusb'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+cd D:\Desktop\librealsense\build\libusb-prefix\src\libusb-build
+if %errorlevel% neq 0 goto :cmEnd
+D:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" "-DCMAKE_CXX_STANDARD_LIBRARIES=kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib" -DCMAKE_TOOLCHAIN_FILE= -DCMAKE_BUILD_TYPE= -DANDROID_ABI= -DANDROID_STL= -DCMAKE_INSTALL_PREFIX=D:/Desktop/librealsense/build/libusb_install "-GVisual Studio 16 2019" -Ax64 "-DCMAKE_GENERATOR_INSTANCE:INTERNAL=C:/Program Files (x86)/Microsoft Visual Studio/2019/Community" D:/Desktop/librealsense/build/third-party/libusb
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch D:/Desktop/librealsense/build/libusb-prefix/src/libusb-stamp/$(Configuration)/libusb-configure
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\Desktop\librealsense\build\libusb-prefix\tmp\libusb-cfgcmd.txt;D:\Desktop\librealsense\build\libusb-prefix\src\libusb-stamp\$(Configuration)\libusb-update;D:\Desktop\librealsense\build\libusb-prefix\src\libusb-stamp\$(Configuration)\libusb-patch;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\Desktop\librealsense\build\libusb-prefix\src\libusb-stamp\$(Configuration)\libusb-configure</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <VerifyInputsAndOutputsExist Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</VerifyInputsAndOutputsExist>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Performing configure step for 'libusb'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+cd D:\Desktop\librealsense\build\libusb-prefix\src\libusb-build
+if %errorlevel% neq 0 goto :cmEnd
+D:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" "-DCMAKE_CXX_STANDARD_LIBRARIES=kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib" -DCMAKE_TOOLCHAIN_FILE= -DCMAKE_BUILD_TYPE= -DANDROID_ABI= -DANDROID_STL= -DCMAKE_INSTALL_PREFIX=D:/Desktop/librealsense/build/libusb_install "-GVisual Studio 16 2019" -Ax64 "-DCMAKE_GENERATOR_INSTANCE:INTERNAL=C:/Program Files (x86)/Microsoft Visual Studio/2019/Community" D:/Desktop/librealsense/build/third-party/libusb
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch D:/Desktop/librealsense/build/libusb-prefix/src/libusb-stamp/$(Configuration)/libusb-configure
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\Desktop\librealsense\build\libusb-prefix\tmp\libusb-cfgcmd.txt;D:\Desktop\librealsense\build\libusb-prefix\src\libusb-stamp\$(Configuration)\libusb-update;D:\Desktop\librealsense\build\libusb-prefix\src\libusb-stamp\$(Configuration)\libusb-patch;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\Desktop\librealsense\build\libusb-prefix\src\libusb-stamp\$(Configuration)\libusb-configure</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+      <VerifyInputsAndOutputsExist Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</VerifyInputsAndOutputsExist>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\Desktop\librealsense\build\CMakeFiles\5c7dce35ec7dbd0b69c485a7cfed03ce\libusb-build.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Performing build step for 'libusb'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+cd D:\Desktop\librealsense\build\libusb-prefix\src\libusb-build
+if %errorlevel% neq 0 goto :cmEnd
+D:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" --build . --config Debug
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch D:/Desktop/librealsense/build/libusb-prefix/src/libusb-stamp/$(Configuration)/libusb-build
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\Desktop\librealsense\build\libusb-prefix\src\libusb-stamp\$(Configuration)\libusb-configure;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\Desktop\librealsense\build\libusb-prefix\src\libusb-stamp\$(Configuration)\libusb-build</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Performing build step for 'libusb'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+cd D:\Desktop\librealsense\build\libusb-prefix\src\libusb-build
+if %errorlevel% neq 0 goto :cmEnd
+D:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" --build . --config Release
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch D:/Desktop/librealsense/build/libusb-prefix/src/libusb-stamp/$(Configuration)/libusb-build
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\Desktop\librealsense\build\libusb-prefix\src\libusb-stamp\$(Configuration)\libusb-configure;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\Desktop\librealsense\build\libusb-prefix\src\libusb-stamp\$(Configuration)\libusb-build</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Performing build step for 'libusb'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+cd D:\Desktop\librealsense\build\libusb-prefix\src\libusb-build
+if %errorlevel% neq 0 goto :cmEnd
+D:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" --build . --config MinSizeRel
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch D:/Desktop/librealsense/build/libusb-prefix/src/libusb-stamp/$(Configuration)/libusb-build
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\Desktop\librealsense\build\libusb-prefix\src\libusb-stamp\$(Configuration)\libusb-configure;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\Desktop\librealsense\build\libusb-prefix\src\libusb-stamp\$(Configuration)\libusb-build</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Performing build step for 'libusb'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+cd D:\Desktop\librealsense\build\libusb-prefix\src\libusb-build
+if %errorlevel% neq 0 goto :cmEnd
+D:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" --build . --config RelWithDebInfo
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch D:/Desktop/librealsense/build/libusb-prefix/src/libusb-stamp/$(Configuration)/libusb-build
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\Desktop\librealsense\build\libusb-prefix\src\libusb-stamp\$(Configuration)\libusb-configure;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\Desktop\librealsense\build\libusb-prefix\src\libusb-stamp\$(Configuration)\libusb-build</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\Desktop\librealsense\build\CMakeFiles\5c7dce35ec7dbd0b69c485a7cfed03ce\libusb-install.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Performing install step for 'libusb'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+cd D:\Desktop\librealsense\build\libusb-prefix\src\libusb-build
+if %errorlevel% neq 0 goto :cmEnd
+D:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" --build . --config Debug --target install
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch D:/Desktop/librealsense/build/libusb-prefix/src/libusb-stamp/$(Configuration)/libusb-install
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\Desktop\librealsense\build\libusb-prefix\src\libusb-stamp\$(Configuration)\libusb-build;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\Desktop\librealsense\build\libusb-prefix\src\libusb-stamp\$(Configuration)\libusb-install</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Performing install step for 'libusb'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+cd D:\Desktop\librealsense\build\libusb-prefix\src\libusb-build
+if %errorlevel% neq 0 goto :cmEnd
+D:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" --build . --config Release --target install
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch D:/Desktop/librealsense/build/libusb-prefix/src/libusb-stamp/$(Configuration)/libusb-install
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\Desktop\librealsense\build\libusb-prefix\src\libusb-stamp\$(Configuration)\libusb-build;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\Desktop\librealsense\build\libusb-prefix\src\libusb-stamp\$(Configuration)\libusb-install</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Performing install step for 'libusb'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+cd D:\Desktop\librealsense\build\libusb-prefix\src\libusb-build
+if %errorlevel% neq 0 goto :cmEnd
+D:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" --build . --config MinSizeRel --target install
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch D:/Desktop/librealsense/build/libusb-prefix/src/libusb-stamp/$(Configuration)/libusb-install
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\Desktop\librealsense\build\libusb-prefix\src\libusb-stamp\$(Configuration)\libusb-build;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\Desktop\librealsense\build\libusb-prefix\src\libusb-stamp\$(Configuration)\libusb-install</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Performing install step for 'libusb'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+cd D:\Desktop\librealsense\build\libusb-prefix\src\libusb-build
+if %errorlevel% neq 0 goto :cmEnd
+D:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" --build . --config RelWithDebInfo --target install
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch D:/Desktop/librealsense/build/libusb-prefix/src/libusb-stamp/$(Configuration)/libusb-install
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\Desktop\librealsense\build\libusb-prefix\src\libusb-stamp\$(Configuration)\libusb-build;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\Desktop\librealsense\build\libusb-prefix\src\libusb-stamp\$(Configuration)\libusb-install</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\Desktop\librealsense\build\CMakeFiles\5c7dce35ec7dbd0b69c485a7cfed03ce\libusb-test.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">No test step for 'libusb'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+cd D:\Desktop\librealsense\build\libusb-prefix\src\libusb-build
+if %errorlevel% neq 0 goto :cmEnd
+D:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch D:/Desktop/librealsense/build/libusb-prefix/src/libusb-stamp/$(Configuration)/libusb-test
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\Desktop\librealsense\build\libusb-prefix\src\libusb-stamp\$(Configuration)\libusb-install;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\Desktop\librealsense\build\libusb-prefix\src\libusb-stamp\$(Configuration)\libusb-test</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">No test step for 'libusb'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+cd D:\Desktop\librealsense\build\libusb-prefix\src\libusb-build
+if %errorlevel% neq 0 goto :cmEnd
+D:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch D:/Desktop/librealsense/build/libusb-prefix/src/libusb-stamp/$(Configuration)/libusb-test
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\Desktop\librealsense\build\libusb-prefix\src\libusb-stamp\$(Configuration)\libusb-install;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\Desktop\librealsense\build\libusb-prefix\src\libusb-stamp\$(Configuration)\libusb-test</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">No test step for 'libusb'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+cd D:\Desktop\librealsense\build\libusb-prefix\src\libusb-build
+if %errorlevel% neq 0 goto :cmEnd
+D:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch D:/Desktop/librealsense/build/libusb-prefix/src/libusb-stamp/$(Configuration)/libusb-test
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\Desktop\librealsense\build\libusb-prefix\src\libusb-stamp\$(Configuration)\libusb-install;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\Desktop\librealsense\build\libusb-prefix\src\libusb-stamp\$(Configuration)\libusb-test</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">No test step for 'libusb'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+cd D:\Desktop\librealsense\build\libusb-prefix\src\libusb-build
+if %errorlevel% neq 0 goto :cmEnd
+D:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch D:/Desktop/librealsense/build/libusb-prefix/src/libusb-stamp/$(Configuration)/libusb-test
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\Desktop\librealsense\build\libusb-prefix\src\libusb-stamp\$(Configuration)\libusb-install;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\Desktop\librealsense\build\libusb-prefix\src\libusb-stamp\$(Configuration)\libusb-test</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\Desktop\librealsense\build\CMakeFiles\3385042e81e1ed83641c541b79fa1b9f\libusb-complete.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Completed 'libusb'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory D:/Desktop/librealsense/build/CMakeFiles/$(Configuration)
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch D:/Desktop/librealsense/build/CMakeFiles/$(Configuration)/libusb-complete
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch D:/Desktop/librealsense/build/libusb-prefix/src/libusb-stamp/$(Configuration)/libusb-done
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\Desktop\librealsense\build\libusb-prefix\src\libusb-stamp\$(Configuration)\libusb-install;D:\Desktop\librealsense\build\libusb-prefix\src\libusb-stamp\$(Configuration)\libusb-mkdir;D:\Desktop\librealsense\build\libusb-prefix\src\libusb-stamp\$(Configuration)\libusb-download;D:\Desktop\librealsense\build\libusb-prefix\src\libusb-stamp\$(Configuration)\libusb-update;D:\Desktop\librealsense\build\libusb-prefix\src\libusb-stamp\$(Configuration)\libusb-patch;D:\Desktop\librealsense\build\libusb-prefix\src\libusb-stamp\$(Configuration)\libusb-configure;D:\Desktop\librealsense\build\libusb-prefix\src\libusb-stamp\$(Configuration)\libusb-build;D:\Desktop\librealsense\build\libusb-prefix\src\libusb-stamp\$(Configuration)\libusb-test;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\Desktop\librealsense\build\CMakeFiles\$(Configuration)\libusb-complete</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <VerifyInputsAndOutputsExist Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</VerifyInputsAndOutputsExist>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Completed 'libusb'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory D:/Desktop/librealsense/build/CMakeFiles/$(Configuration)
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch D:/Desktop/librealsense/build/CMakeFiles/$(Configuration)/libusb-complete
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch D:/Desktop/librealsense/build/libusb-prefix/src/libusb-stamp/$(Configuration)/libusb-done
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\Desktop\librealsense\build\libusb-prefix\src\libusb-stamp\$(Configuration)\libusb-install;D:\Desktop\librealsense\build\libusb-prefix\src\libusb-stamp\$(Configuration)\libusb-mkdir;D:\Desktop\librealsense\build\libusb-prefix\src\libusb-stamp\$(Configuration)\libusb-download;D:\Desktop\librealsense\build\libusb-prefix\src\libusb-stamp\$(Configuration)\libusb-update;D:\Desktop\librealsense\build\libusb-prefix\src\libusb-stamp\$(Configuration)\libusb-patch;D:\Desktop\librealsense\build\libusb-prefix\src\libusb-stamp\$(Configuration)\libusb-configure;D:\Desktop\librealsense\build\libusb-prefix\src\libusb-stamp\$(Configuration)\libusb-build;D:\Desktop\librealsense\build\libusb-prefix\src\libusb-stamp\$(Configuration)\libusb-test;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\Desktop\librealsense\build\CMakeFiles\$(Configuration)\libusb-complete</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <VerifyInputsAndOutputsExist Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</VerifyInputsAndOutputsExist>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Completed 'libusb'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory D:/Desktop/librealsense/build/CMakeFiles/$(Configuration)
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch D:/Desktop/librealsense/build/CMakeFiles/$(Configuration)/libusb-complete
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch D:/Desktop/librealsense/build/libusb-prefix/src/libusb-stamp/$(Configuration)/libusb-done
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\Desktop\librealsense\build\libusb-prefix\src\libusb-stamp\$(Configuration)\libusb-install;D:\Desktop\librealsense\build\libusb-prefix\src\libusb-stamp\$(Configuration)\libusb-mkdir;D:\Desktop\librealsense\build\libusb-prefix\src\libusb-stamp\$(Configuration)\libusb-download;D:\Desktop\librealsense\build\libusb-prefix\src\libusb-stamp\$(Configuration)\libusb-update;D:\Desktop\librealsense\build\libusb-prefix\src\libusb-stamp\$(Configuration)\libusb-patch;D:\Desktop\librealsense\build\libusb-prefix\src\libusb-stamp\$(Configuration)\libusb-configure;D:\Desktop\librealsense\build\libusb-prefix\src\libusb-stamp\$(Configuration)\libusb-build;D:\Desktop\librealsense\build\libusb-prefix\src\libusb-stamp\$(Configuration)\libusb-test;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\Desktop\librealsense\build\CMakeFiles\$(Configuration)\libusb-complete</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <VerifyInputsAndOutputsExist Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</VerifyInputsAndOutputsExist>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Completed 'libusb'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory D:/Desktop/librealsense/build/CMakeFiles/$(Configuration)
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch D:/Desktop/librealsense/build/CMakeFiles/$(Configuration)/libusb-complete
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch D:/Desktop/librealsense/build/libusb-prefix/src/libusb-stamp/$(Configuration)/libusb-done
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\Desktop\librealsense\build\libusb-prefix\src\libusb-stamp\$(Configuration)\libusb-install;D:\Desktop\librealsense\build\libusb-prefix\src\libusb-stamp\$(Configuration)\libusb-mkdir;D:\Desktop\librealsense\build\libusb-prefix\src\libusb-stamp\$(Configuration)\libusb-download;D:\Desktop\librealsense\build\libusb-prefix\src\libusb-stamp\$(Configuration)\libusb-update;D:\Desktop\librealsense\build\libusb-prefix\src\libusb-stamp\$(Configuration)\libusb-patch;D:\Desktop\librealsense\build\libusb-prefix\src\libusb-stamp\$(Configuration)\libusb-configure;D:\Desktop\librealsense\build\libusb-prefix\src\libusb-stamp\$(Configuration)\libusb-build;D:\Desktop\librealsense\build\libusb-prefix\src\libusb-stamp\$(Configuration)\libusb-test;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\Desktop\librealsense\build\CMakeFiles\$(Configuration)\libusb-complete</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+      <VerifyInputsAndOutputsExist Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</VerifyInputsAndOutputsExist>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\Desktop\librealsense\build\CMakeFiles\1a88e87cb91075ceac461d870d9506b4\libusb.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'"></Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\Desktop\librealsense\build\CMakeFiles\$(Configuration)\libusb-complete;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\Desktop\librealsense\build\CMakeFiles\libusb</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <VerifyInputsAndOutputsExist Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</VerifyInputsAndOutputsExist>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'"></Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\Desktop\librealsense\build\CMakeFiles\$(Configuration)\libusb-complete;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\Desktop\librealsense\build\CMakeFiles\libusb</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <VerifyInputsAndOutputsExist Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</VerifyInputsAndOutputsExist>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'"></Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\Desktop\librealsense\build\CMakeFiles\$(Configuration)\libusb-complete;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\Desktop\librealsense\build\CMakeFiles\libusb</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <VerifyInputsAndOutputsExist Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</VerifyInputsAndOutputsExist>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'"></Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\Desktop\librealsense\build\CMakeFiles\$(Configuration)\libusb-complete;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\Desktop\librealsense\build\CMakeFiles\libusb</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+      <VerifyInputsAndOutputsExist Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</VerifyInputsAndOutputsExist>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\Desktop\librealsense\CMakeLists.txt">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule D:/Desktop/librealsense/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SD:/Desktop/librealsense -BD:/Desktop/librealsense/build --check-stamp-file D:/Desktop/librealsense/build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Program Files\CMake\share\cmake-3.17\Modules\BasicConfigVersion-AnyNewerVersion.cmake.in;C:\Program Files\CMake\share\cmake-3.17\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\CMakeCheckCompilerFlagCommonPatterns.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\CMakePackageConfigHelpers.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\CheckCXXCompilerFlag.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\CheckCXXSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\ExternalProject.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\FindGit.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\GNUInstallDirs.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\Platform\WindowsPaths.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\RepositoryInfo.txt.in;C:\Program Files\CMake\share\cmake-3.17\Modules\WriteBasicConfigVersionFile.cmake;D:\Desktop\librealsense\CMake\connectivity_check.cmake;D:\Desktop\librealsense\CMake\embedd_udev_rules.cmake;D:\Desktop\librealsense\CMake\external_libusb.cmake;D:\Desktop\librealsense\CMake\global_config.cmake;D:\Desktop\librealsense\CMake\include_os.cmake;D:\Desktop\librealsense\CMake\install_config.cmake;D:\Desktop\librealsense\CMake\libusb_config.cmake;D:\Desktop\librealsense\CMake\lrs_macros.cmake;D:\Desktop\librealsense\CMake\lrs_options.cmake;D:\Desktop\librealsense\CMake\realsense2Config.cmake.in;D:\Desktop\librealsense\CMake\version_config.cmake;D:\Desktop\librealsense\CMake\windows_config.cmake;D:\Desktop\librealsense\build\CMakeFiles\3.17.5\CMakeCCompiler.cmake;D:\Desktop\librealsense\build\CMakeFiles\3.17.5\CMakeCXXCompiler.cmake;D:\Desktop\librealsense\build\CMakeFiles\3.17.5\CMakeRCCompiler.cmake;D:\Desktop\librealsense\build\CMakeFiles\3.17.5\CMakeSystem.cmake;D:\Desktop\librealsense\build\libusb-prefix\tmp\libusb-cfgcmd.txt.in;D:\Desktop\librealsense\cmake_uninstall.cmake;D:\Desktop\librealsense\config\librealsense.pc.in;D:\Desktop\librealsense\include\CMakeLists.txt;D:\Desktop\librealsense\src\CMakeLists.txt;D:\Desktop\librealsense\src\algo\CMakeLists.txt;D:\Desktop\librealsense\src\algo\depth-to-rgb-calibration\CMakeLists.txt;D:\Desktop\librealsense\src\core\CMakeLists.txt;D:\Desktop\librealsense\src\ds5\CMakeLists.txt;D:\Desktop\librealsense\src\fw-logs\CMakeLists.txt;D:\Desktop\librealsense\src\fw-update\CMakeLists.txt;D:\Desktop\librealsense\src\ivcam\CMakeLists.txt;D:\Desktop\librealsense\src\l500\CMakeLists.txt;D:\Desktop\librealsense\src\media\CMakeLists.txt;D:\Desktop\librealsense\src\mf\CMakeLists.txt;D:\Desktop\librealsense\src\mock\CMakeLists.txt;D:\Desktop\librealsense\src\pipeline\CMakeLists.txt;D:\Desktop\librealsense\src\proc\CMakeLists.txt;D:\Desktop\librealsense\src\proc\sse\CMakeLists.txt;D:\Desktop\librealsense\src\res\CMakeLists.txt;D:\Desktop\librealsense\src\tm2\CMakeLists.txt;D:\Desktop\librealsense\src\usb\CMakeLists.txt;D:\Desktop\librealsense\src\win\CMakeLists.txt;D:\Desktop\librealsense\src\winusb\CMakeLists.txt;D:\Desktop\librealsense\third-party\CMakeLists.txt;D:\Desktop\librealsense\third-party\easyloggingpp\CMakeLists.txt;D:\Desktop\librealsense\third-party\realsense-file\config.cmake;D:\Desktop\librealsense\third-party\realsense-file\rosbag\config.cmake;D:\Desktop\librealsense\third-party\realsense-file\rosbag\console_bridge\config.cmake;D:\Desktop\librealsense\third-party\realsense-file\rosbag\cpp_common\config.cmake;D:\Desktop\librealsense\third-party\realsense-file\rosbag\rosbag_storage\config.cmake;D:\Desktop\librealsense\third-party\realsense-file\rosbag\roscpp_serialization\config.cmake;D:\Desktop\librealsense\third-party\realsense-file\rosbag\roscpp_traits\config.cmake;D:\Desktop\librealsense\third-party\realsense-file\rosbag\roslz4\config.cmake;D:\Desktop\librealsense\third-party\realsense-file\rosbag\rostime\config.cmake;D:\Desktop\librealsense\third-party\sqlite\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\Desktop\librealsense\build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule D:/Desktop/librealsense/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SD:/Desktop/librealsense -BD:/Desktop/librealsense/build --check-stamp-file D:/Desktop/librealsense/build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Program Files\CMake\share\cmake-3.17\Modules\BasicConfigVersion-AnyNewerVersion.cmake.in;C:\Program Files\CMake\share\cmake-3.17\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\CMakeCheckCompilerFlagCommonPatterns.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\CMakePackageConfigHelpers.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\CheckCXXCompilerFlag.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\CheckCXXSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\ExternalProject.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\FindGit.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\GNUInstallDirs.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\Platform\WindowsPaths.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\RepositoryInfo.txt.in;C:\Program Files\CMake\share\cmake-3.17\Modules\WriteBasicConfigVersionFile.cmake;D:\Desktop\librealsense\CMake\connectivity_check.cmake;D:\Desktop\librealsense\CMake\embedd_udev_rules.cmake;D:\Desktop\librealsense\CMake\external_libusb.cmake;D:\Desktop\librealsense\CMake\global_config.cmake;D:\Desktop\librealsense\CMake\include_os.cmake;D:\Desktop\librealsense\CMake\install_config.cmake;D:\Desktop\librealsense\CMake\libusb_config.cmake;D:\Desktop\librealsense\CMake\lrs_macros.cmake;D:\Desktop\librealsense\CMake\lrs_options.cmake;D:\Desktop\librealsense\CMake\realsense2Config.cmake.in;D:\Desktop\librealsense\CMake\version_config.cmake;D:\Desktop\librealsense\CMake\windows_config.cmake;D:\Desktop\librealsense\build\CMakeFiles\3.17.5\CMakeCCompiler.cmake;D:\Desktop\librealsense\build\CMakeFiles\3.17.5\CMakeCXXCompiler.cmake;D:\Desktop\librealsense\build\CMakeFiles\3.17.5\CMakeRCCompiler.cmake;D:\Desktop\librealsense\build\CMakeFiles\3.17.5\CMakeSystem.cmake;D:\Desktop\librealsense\build\libusb-prefix\tmp\libusb-cfgcmd.txt.in;D:\Desktop\librealsense\cmake_uninstall.cmake;D:\Desktop\librealsense\config\librealsense.pc.in;D:\Desktop\librealsense\include\CMakeLists.txt;D:\Desktop\librealsense\src\CMakeLists.txt;D:\Desktop\librealsense\src\algo\CMakeLists.txt;D:\Desktop\librealsense\src\algo\depth-to-rgb-calibration\CMakeLists.txt;D:\Desktop\librealsense\src\core\CMakeLists.txt;D:\Desktop\librealsense\src\ds5\CMakeLists.txt;D:\Desktop\librealsense\src\fw-logs\CMakeLists.txt;D:\Desktop\librealsense\src\fw-update\CMakeLists.txt;D:\Desktop\librealsense\src\ivcam\CMakeLists.txt;D:\Desktop\librealsense\src\l500\CMakeLists.txt;D:\Desktop\librealsense\src\media\CMakeLists.txt;D:\Desktop\librealsense\src\mf\CMakeLists.txt;D:\Desktop\librealsense\src\mock\CMakeLists.txt;D:\Desktop\librealsense\src\pipeline\CMakeLists.txt;D:\Desktop\librealsense\src\proc\CMakeLists.txt;D:\Desktop\librealsense\src\proc\sse\CMakeLists.txt;D:\Desktop\librealsense\src\res\CMakeLists.txt;D:\Desktop\librealsense\src\tm2\CMakeLists.txt;D:\Desktop\librealsense\src\usb\CMakeLists.txt;D:\Desktop\librealsense\src\win\CMakeLists.txt;D:\Desktop\librealsense\src\winusb\CMakeLists.txt;D:\Desktop\librealsense\third-party\CMakeLists.txt;D:\Desktop\librealsense\third-party\easyloggingpp\CMakeLists.txt;D:\Desktop\librealsense\third-party\realsense-file\config.cmake;D:\Desktop\librealsense\third-party\realsense-file\rosbag\config.cmake;D:\Desktop\librealsense\third-party\realsense-file\rosbag\console_bridge\config.cmake;D:\Desktop\librealsense\third-party\realsense-file\rosbag\cpp_common\config.cmake;D:\Desktop\librealsense\third-party\realsense-file\rosbag\rosbag_storage\config.cmake;D:\Desktop\librealsense\third-party\realsense-file\rosbag\roscpp_serialization\config.cmake;D:\Desktop\librealsense\third-party\realsense-file\rosbag\roscpp_traits\config.cmake;D:\Desktop\librealsense\third-party\realsense-file\rosbag\roslz4\config.cmake;D:\Desktop\librealsense\third-party\realsense-file\rosbag\rostime\config.cmake;D:\Desktop\librealsense\third-party\sqlite\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\Desktop\librealsense\build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule D:/Desktop/librealsense/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SD:/Desktop/librealsense -BD:/Desktop/librealsense/build --check-stamp-file D:/Desktop/librealsense/build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Program Files\CMake\share\cmake-3.17\Modules\BasicConfigVersion-AnyNewerVersion.cmake.in;C:\Program Files\CMake\share\cmake-3.17\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\CMakeCheckCompilerFlagCommonPatterns.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\CMakePackageConfigHelpers.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\CheckCXXCompilerFlag.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\CheckCXXSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\ExternalProject.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\FindGit.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\GNUInstallDirs.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\Platform\WindowsPaths.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\RepositoryInfo.txt.in;C:\Program Files\CMake\share\cmake-3.17\Modules\WriteBasicConfigVersionFile.cmake;D:\Desktop\librealsense\CMake\connectivity_check.cmake;D:\Desktop\librealsense\CMake\embedd_udev_rules.cmake;D:\Desktop\librealsense\CMake\external_libusb.cmake;D:\Desktop\librealsense\CMake\global_config.cmake;D:\Desktop\librealsense\CMake\include_os.cmake;D:\Desktop\librealsense\CMake\install_config.cmake;D:\Desktop\librealsense\CMake\libusb_config.cmake;D:\Desktop\librealsense\CMake\lrs_macros.cmake;D:\Desktop\librealsense\CMake\lrs_options.cmake;D:\Desktop\librealsense\CMake\realsense2Config.cmake.in;D:\Desktop\librealsense\CMake\version_config.cmake;D:\Desktop\librealsense\CMake\windows_config.cmake;D:\Desktop\librealsense\build\CMakeFiles\3.17.5\CMakeCCompiler.cmake;D:\Desktop\librealsense\build\CMakeFiles\3.17.5\CMakeCXXCompiler.cmake;D:\Desktop\librealsense\build\CMakeFiles\3.17.5\CMakeRCCompiler.cmake;D:\Desktop\librealsense\build\CMakeFiles\3.17.5\CMakeSystem.cmake;D:\Desktop\librealsense\build\libusb-prefix\tmp\libusb-cfgcmd.txt.in;D:\Desktop\librealsense\cmake_uninstall.cmake;D:\Desktop\librealsense\config\librealsense.pc.in;D:\Desktop\librealsense\include\CMakeLists.txt;D:\Desktop\librealsense\src\CMakeLists.txt;D:\Desktop\librealsense\src\algo\CMakeLists.txt;D:\Desktop\librealsense\src\algo\depth-to-rgb-calibration\CMakeLists.txt;D:\Desktop\librealsense\src\core\CMakeLists.txt;D:\Desktop\librealsense\src\ds5\CMakeLists.txt;D:\Desktop\librealsense\src\fw-logs\CMakeLists.txt;D:\Desktop\librealsense\src\fw-update\CMakeLists.txt;D:\Desktop\librealsense\src\ivcam\CMakeLists.txt;D:\Desktop\librealsense\src\l500\CMakeLists.txt;D:\Desktop\librealsense\src\media\CMakeLists.txt;D:\Desktop\librealsense\src\mf\CMakeLists.txt;D:\Desktop\librealsense\src\mock\CMakeLists.txt;D:\Desktop\librealsense\src\pipeline\CMakeLists.txt;D:\Desktop\librealsense\src\proc\CMakeLists.txt;D:\Desktop\librealsense\src\proc\sse\CMakeLists.txt;D:\Desktop\librealsense\src\res\CMakeLists.txt;D:\Desktop\librealsense\src\tm2\CMakeLists.txt;D:\Desktop\librealsense\src\usb\CMakeLists.txt;D:\Desktop\librealsense\src\win\CMakeLists.txt;D:\Desktop\librealsense\src\winusb\CMakeLists.txt;D:\Desktop\librealsense\third-party\CMakeLists.txt;D:\Desktop\librealsense\third-party\easyloggingpp\CMakeLists.txt;D:\Desktop\librealsense\third-party\realsense-file\config.cmake;D:\Desktop\librealsense\third-party\realsense-file\rosbag\config.cmake;D:\Desktop\librealsense\third-party\realsense-file\rosbag\console_bridge\config.cmake;D:\Desktop\librealsense\third-party\realsense-file\rosbag\cpp_common\config.cmake;D:\Desktop\librealsense\third-party\realsense-file\rosbag\rosbag_storage\config.cmake;D:\Desktop\librealsense\third-party\realsense-file\rosbag\roscpp_serialization\config.cmake;D:\Desktop\librealsense\third-party\realsense-file\rosbag\roscpp_traits\config.cmake;D:\Desktop\librealsense\third-party\realsense-file\rosbag\roslz4\config.cmake;D:\Desktop\librealsense\third-party\realsense-file\rosbag\rostime\config.cmake;D:\Desktop\librealsense\third-party\sqlite\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\Desktop\librealsense\build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule D:/Desktop/librealsense/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SD:/Desktop/librealsense -BD:/Desktop/librealsense/build --check-stamp-file D:/Desktop/librealsense/build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Program Files\CMake\share\cmake-3.17\Modules\BasicConfigVersion-AnyNewerVersion.cmake.in;C:\Program Files\CMake\share\cmake-3.17\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\CMakeCheckCompilerFlagCommonPatterns.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\CMakePackageConfigHelpers.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\CheckCXXCompilerFlag.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\CheckCXXSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\ExternalProject.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\FindGit.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\GNUInstallDirs.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\Platform\WindowsPaths.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\RepositoryInfo.txt.in;C:\Program Files\CMake\share\cmake-3.17\Modules\WriteBasicConfigVersionFile.cmake;D:\Desktop\librealsense\CMake\connectivity_check.cmake;D:\Desktop\librealsense\CMake\embedd_udev_rules.cmake;D:\Desktop\librealsense\CMake\external_libusb.cmake;D:\Desktop\librealsense\CMake\global_config.cmake;D:\Desktop\librealsense\CMake\include_os.cmake;D:\Desktop\librealsense\CMake\install_config.cmake;D:\Desktop\librealsense\CMake\libusb_config.cmake;D:\Desktop\librealsense\CMake\lrs_macros.cmake;D:\Desktop\librealsense\CMake\lrs_options.cmake;D:\Desktop\librealsense\CMake\realsense2Config.cmake.in;D:\Desktop\librealsense\CMake\version_config.cmake;D:\Desktop\librealsense\CMake\windows_config.cmake;D:\Desktop\librealsense\build\CMakeFiles\3.17.5\CMakeCCompiler.cmake;D:\Desktop\librealsense\build\CMakeFiles\3.17.5\CMakeCXXCompiler.cmake;D:\Desktop\librealsense\build\CMakeFiles\3.17.5\CMakeRCCompiler.cmake;D:\Desktop\librealsense\build\CMakeFiles\3.17.5\CMakeSystem.cmake;D:\Desktop\librealsense\build\libusb-prefix\tmp\libusb-cfgcmd.txt.in;D:\Desktop\librealsense\cmake_uninstall.cmake;D:\Desktop\librealsense\config\librealsense.pc.in;D:\Desktop\librealsense\include\CMakeLists.txt;D:\Desktop\librealsense\src\CMakeLists.txt;D:\Desktop\librealsense\src\algo\CMakeLists.txt;D:\Desktop\librealsense\src\algo\depth-to-rgb-calibration\CMakeLists.txt;D:\Desktop\librealsense\src\core\CMakeLists.txt;D:\Desktop\librealsense\src\ds5\CMakeLists.txt;D:\Desktop\librealsense\src\fw-logs\CMakeLists.txt;D:\Desktop\librealsense\src\fw-update\CMakeLists.txt;D:\Desktop\librealsense\src\ivcam\CMakeLists.txt;D:\Desktop\librealsense\src\l500\CMakeLists.txt;D:\Desktop\librealsense\src\media\CMakeLists.txt;D:\Desktop\librealsense\src\mf\CMakeLists.txt;D:\Desktop\librealsense\src\mock\CMakeLists.txt;D:\Desktop\librealsense\src\pipeline\CMakeLists.txt;D:\Desktop\librealsense\src\proc\CMakeLists.txt;D:\Desktop\librealsense\src\proc\sse\CMakeLists.txt;D:\Desktop\librealsense\src\res\CMakeLists.txt;D:\Desktop\librealsense\src\tm2\CMakeLists.txt;D:\Desktop\librealsense\src\usb\CMakeLists.txt;D:\Desktop\librealsense\src\win\CMakeLists.txt;D:\Desktop\librealsense\src\winusb\CMakeLists.txt;D:\Desktop\librealsense\third-party\CMakeLists.txt;D:\Desktop\librealsense\third-party\easyloggingpp\CMakeLists.txt;D:\Desktop\librealsense\third-party\realsense-file\config.cmake;D:\Desktop\librealsense\third-party\realsense-file\rosbag\config.cmake;D:\Desktop\librealsense\third-party\realsense-file\rosbag\console_bridge\config.cmake;D:\Desktop\librealsense\third-party\realsense-file\rosbag\cpp_common\config.cmake;D:\Desktop\librealsense\third-party\realsense-file\rosbag\rosbag_storage\config.cmake;D:\Desktop\librealsense\third-party\realsense-file\rosbag\roscpp_serialization\config.cmake;D:\Desktop\librealsense\third-party\realsense-file\rosbag\roscpp_traits\config.cmake;D:\Desktop\librealsense\third-party\realsense-file\rosbag\roslz4\config.cmake;D:\Desktop\librealsense\third-party\realsense-file\rosbag\rostime\config.cmake;D:\Desktop\librealsense\third-party\sqlite\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\Desktop\librealsense\build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="D:\Desktop\librealsense\build\CMakeFiles\libusb" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="D:\Desktop\librealsense\build\ZERO_CHECK.vcxproj">
+      <Project>{E9ECF5A3-D6C5-3C1E-A39C-B1B588B5E85E}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

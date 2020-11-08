@@ -1,0 +1,11 @@
+# CMake generation dependency list for this directory.
+D:/Desktop/librealsense/third-party/realsense-file/CMakeLists.txt
+D:/Desktop/librealsense/third-party/realsense-file/config.cmake
+D:/Desktop/librealsense/third-party/realsense-file/rosbag/config.cmake
+D:/Desktop/librealsense/third-party/realsense-file/rosbag/console_bridge/config.cmake
+D:/Desktop/librealsense/third-party/realsense-file/rosbag/cpp_common/config.cmake
+D:/Desktop/librealsense/third-party/realsense-file/rosbag/rosbag_storage/config.cmake
+D:/Desktop/librealsense/third-party/realsense-file/rosbag/roscpp_serialization/config.cmake
+D:/Desktop/librealsense/third-party/realsense-file/rosbag/roscpp_traits/config.cmake
+D:/Desktop/librealsense/third-party/realsense-file/rosbag/roslz4/config.cmake
+D:/Desktop/librealsense/third-party/realsense-file/rosbag/rostime/config.cmake

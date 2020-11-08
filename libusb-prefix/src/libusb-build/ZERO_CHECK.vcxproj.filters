@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="D:\Desktop\librealsense\build\libusb-prefix\src\libusb-build\CMakeFiles\7c2e3b3586c1b3c493acc149f3fd738a\generate.stamp.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{EE0FDC86-B784-3034-89B6-A0586D503F9C}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

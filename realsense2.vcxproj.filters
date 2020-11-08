@@ -1,0 +1,1133 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="D:\Desktop\librealsense\src\algo\depth-to-rgb-calibration\calibration.cpp">
+      <Filter>Source Files\src\algo\depth-to-rgb-calibration</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Desktop\librealsense\src\algo\depth-to-rgb-calibration\coeffs.cpp">
+      <Filter>Source Files\src\algo\depth-to-rgb-calibration</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Desktop\librealsense\src\algo\depth-to-rgb-calibration\cost.cpp">
+      <Filter>Source Files\src\algo\depth-to-rgb-calibration</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Desktop\librealsense\src\algo\depth-to-rgb-calibration\uvmap.cpp">
+      <Filter>Source Files\src\algo\depth-to-rgb-calibration</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Desktop\librealsense\src\algo\depth-to-rgb-calibration\optimizer.cpp">
+      <Filter>Source Files\src\algo\depth-to-rgb-calibration</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Desktop\librealsense\src\algo\depth-to-rgb-calibration\k-to-dsm.cpp">
+      <Filter>Source Files\src\algo\depth-to-rgb-calibration</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Desktop\librealsense\src\algo\depth-to-rgb-calibration\svd_3x4.cpp">
+      <Filter>Source Files\src\algo\depth-to-rgb-calibration</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Desktop\librealsense\src\algo\depth-to-rgb-calibration\pinv_3x3.cpp">
+      <Filter>Source Files\src\algo\depth-to-rgb-calibration</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Desktop\librealsense\src\algo\depth-to-rgb-calibration\utils.cpp">
+      <Filter>Source Files\src\algo\depth-to-rgb-calibration</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Desktop\librealsense\src\algo\depth-to-rgb-calibration\rotation-in-angles.cpp">
+      <Filter>Source Files\src\algo\depth-to-rgb-calibration</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Desktop\librealsense\src\algo\depth-to-rgb-calibration\valid-scene.cpp">
+      <Filter>Source Files\src\algo\depth-to-rgb-calibration</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Desktop\librealsense\src\algo\depth-to-rgb-calibration\valid-results.cpp">
+      <Filter>Source Files\src\algo\depth-to-rgb-calibration</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Desktop\librealsense\src\ds5\ds5-options.cpp">
+      <Filter>Source Files\src\ds5</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Desktop\librealsense\src\ds5\ds5-timestamp.cpp">
+      <Filter>Source Files\src\ds5</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Desktop\librealsense\src\ds5\ds5-private.cpp">
+      <Filter>Source Files\src\ds5</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Desktop\librealsense\src\ds5\ds5-motion.cpp">
+      <Filter>Source Files\src\ds5</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Desktop\librealsense\src\ds5\ds5-nonmonochrome.cpp">
+      <Filter>Source Files\src\ds5</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Desktop\librealsense\src\ds5\ds5-device.cpp">
+      <Filter>Source Files\src\ds5</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Desktop\librealsense\src\ds5\ds5-color.cpp">
+      <Filter>Source Files\src\ds5</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Desktop\librealsense\src\ds5\ds5-active.cpp">
+      <Filter>Source Files\src\ds5</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Desktop\librealsense\src\ds5\ds5-factory.cpp">
+      <Filter>Source Files\src\ds5</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Desktop\librealsense\src\ds5\ds5-fw-update-device.cpp">
+      <Filter>Source Files\src\ds5</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Desktop\librealsense\src\ds5\advanced_mode\rs_advanced_mode.cpp">
+      <Filter>Source Files\src\ds5\advanced_mode</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Desktop\librealsense\src\ds5\advanced_mode\presets.cpp">
+      <Filter>Source Files\src\ds5\advanced_mode</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Desktop\librealsense\src\ds5\advanced_mode\advanced_mode.cpp">
+      <Filter>Source Files\src\ds5\advanced_mode</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Desktop\librealsense\src\ds5\ds5-auto-calibration.cpp">
+      <Filter>Source Files\src\ds5</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Desktop\librealsense\src\ivcam\ivcam-private.cpp">
+      <Filter>Source Files\src\ivcam</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Desktop\librealsense\src\ivcam\sr300.cpp">
+      <Filter>Source Files\src\ivcam</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Desktop\librealsense\src\ivcam\sr300-fw-update-device.cpp">
+      <Filter>Source Files\src\ivcam</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Desktop\librealsense\src\l500\l500-depth.cpp">
+      <Filter>Source Files\src\l500</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Desktop\librealsense\src\l500\l500-private.cpp">
+      <Filter>Source Files\src\l500</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Desktop\librealsense\src\l500\l500-color.cpp">
+      <Filter>Source Files\src\l500</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Desktop\librealsense\src\l500\l500-device.cpp">
+      <Filter>Source Files\src\l500</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Desktop\librealsense\src\l500\l500-motion.cpp">
+      <Filter>Source Files\src\l500</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Desktop\librealsense\src\l500\l500-factory.cpp">
+      <Filter>Source Files\src\l500</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Desktop\librealsense\src\l500\l500-fw-update-device.cpp">
+      <Filter>Source Files\src\l500</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Desktop\librealsense\src\l500\l500-serializable.cpp">
+      <Filter>Source Files\src\l500</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Desktop\librealsense\src\l500\l500-options.cpp">
+      <Filter>Source Files\src\l500</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Desktop\librealsense\src\l500\ac-trigger.cpp">
+      <Filter>Source Files\src\l500</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Desktop\librealsense\src\media\record\record_device.cpp">
+      <Filter>Source Files\src\media\record</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Desktop\librealsense\src\media\record\record_sensor.cpp">
+      <Filter>Source Files\src\media\record</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Desktop\librealsense\src\media\playback\playback_device.cpp">
+      <Filter>Source Files\src\media\playback</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Desktop\librealsense\src\media\playback\playback_sensor.cpp">
+      <Filter>Source Files\src\media\playback</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Desktop\librealsense\src\media\ros\ros_reader.cpp">
+      <Filter>Source Files\src\media\ros</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Desktop\librealsense\src\media\ros\ros_writer.cpp">
+      <Filter>Source Files\src\media\ros</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Desktop\librealsense\src\mock\sql.cpp">
+      <Filter>Source Files\src\mock</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Desktop\librealsense\src\mock\recorder.cpp">
+      <Filter>Source Files\src\mock</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Desktop\librealsense\src\proc\sse\sse-align.cpp">
+      <Filter>Source Files\src\proc\sse</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Desktop\librealsense\src\proc\sse\sse-pointcloud.cpp">
+      <Filter>Source Files\src\proc\sse</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Desktop\librealsense\src\proc\processing-blocks-factory.cpp">
+      <Filter>Source Files\src\proc</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Desktop\librealsense\src\proc\align.cpp">
+      <Filter>Source Files\src\proc</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Desktop\librealsense\src\proc\colorizer.cpp">
+      <Filter>Source Files\src\proc</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Desktop\librealsense\src\proc\pointcloud.cpp">
+      <Filter>Source Files\src\proc</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Desktop\librealsense\src\proc\occlusion-filter.cpp">
+      <Filter>Source Files\src\proc</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Desktop\librealsense\src\proc\synthetic-stream.cpp">
+      <Filter>Source Files\src\proc</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Desktop\librealsense\src\proc\syncer-processing-block.cpp">
+      <Filter>Source Files\src\proc</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Desktop\librealsense\src\proc\decimation-filter.cpp">
+      <Filter>Source Files\src\proc</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Desktop\librealsense\src\proc\spatial-filter.cpp">
+      <Filter>Source Files\src\proc</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Desktop\librealsense\src\proc\temporal-filter.cpp">
+      <Filter>Source Files\src\proc</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Desktop\librealsense\src\proc\hdr-merge.cpp">
+      <Filter>Source Files\src\proc</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Desktop\librealsense\src\proc\sequence_id_filter.cpp">
+      <Filter>Source Files\src\proc</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Desktop\librealsense\src\proc\hole-filling-filter.cpp">
+      <Filter>Source Files\src\proc</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Desktop\librealsense\src\proc\disparity-transform.cpp">
+      <Filter>Source Files\src\proc</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Desktop\librealsense\src\proc\y8i-to-y8y8.cpp">
+      <Filter>Source Files\src\proc</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Desktop\librealsense\src\proc\y12i-to-y16y16.cpp">
+      <Filter>Source Files\src\proc</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Desktop\librealsense\src\proc\identity-processing-block.cpp">
+      <Filter>Source Files\src\proc</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Desktop\librealsense\src\proc\threshold.cpp">
+      <Filter>Source Files\src\proc</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Desktop\librealsense\src\proc\rates-printer.cpp">
+      <Filter>Source Files\src\proc</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Desktop\librealsense\src\proc\zero-order.cpp">
+      <Filter>Source Files\src\proc</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Desktop\librealsense\src\proc\units-transform.cpp">
+      <Filter>Source Files\src\proc</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Desktop\librealsense\src\proc\rotation-transform.cpp">
+      <Filter>Source Files\src\proc</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Desktop\librealsense\src\proc\color-formats-converter.cpp">
+      <Filter>Source Files\src\proc</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Desktop\librealsense\src\proc\depth-formats-converter.cpp">
+      <Filter>Source Files\src\proc</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Desktop\librealsense\src\proc\motion-transform.cpp">
+      <Filter>Source Files\src\proc</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Desktop\librealsense\src\proc\auto-exposure-processor.cpp">
+      <Filter>Source Files\src\proc</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Desktop\librealsense\src\proc\depth-decompress.cpp">
+      <Filter>Source Files\src\proc</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Desktop\librealsense\src\pipeline\pipeline.cpp">
+      <Filter>Source Files\src\pipeline</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Desktop\librealsense\src\pipeline\config.cpp">
+      <Filter>Source Files\src\pipeline</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Desktop\librealsense\src\pipeline\profile.cpp">
+      <Filter>Source Files\src\pipeline</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Desktop\librealsense\src\pipeline\aggregator.cpp">
+      <Filter>Source Files\src\pipeline</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Desktop\librealsense\src\fw-logs\fw-log-data.cpp">
+      <Filter>Source Files\src\fw-logs</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Desktop\librealsense\src\fw-logs\fw-logs-formating-options.cpp">
+      <Filter>Source Files\src\fw-logs</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Desktop\librealsense\src\fw-logs\fw-logs-parser.cpp">
+      <Filter>Source Files\src\fw-logs</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Desktop\librealsense\src\fw-logs\fw-logs-xml-helper.cpp">
+      <Filter>Source Files\src\fw-logs</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Desktop\librealsense\src\fw-logs\fw-string-formatter.cpp">
+      <Filter>Source Files\src\fw-logs</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Desktop\librealsense\src\fw-update\fw-update-device.cpp">
+      <Filter>Source Files\src\fw-update</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Desktop\librealsense\src\fw-update\fw-update-factory.cpp">
+      <Filter>Source Files\src\fw-update</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Desktop\librealsense\src\fw-update\fw-update-unsigned.cpp">
+      <Filter>Source Files\src\fw-update</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Desktop\librealsense\src\win\win-helpers.cpp">
+      <Filter>Source Files\src\win</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Desktop\librealsense\src\winusb\interface-winusb.cpp">
+      <Filter>Source Files\src\winusb</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Desktop\librealsense\src\winusb\device-winusb.cpp">
+      <Filter>Source Files\src\winusb</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Desktop\librealsense\src\winusb\enumerator-winusb.cpp">
+      <Filter>Source Files\src\winusb</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Desktop\librealsense\src\winusb\messenger-winusb.cpp">
+      <Filter>Source Files\src\winusb</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Desktop\librealsense\src\winusb\request-winusb.cpp">
+      <Filter>Source Files\src\winusb</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Desktop\librealsense\src\mf\mf-uvc.cpp">
+      <Filter>Source Files\src\mf</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Desktop\librealsense\src\mf\mf-hid.cpp">
+      <Filter>Source Files\src\mf</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Desktop\librealsense\src\mf\mf-backend.cpp">
+      <Filter>Source Files\src\mf</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Desktop\librealsense\src\tm2\tm-device.cpp">
+      <Filter>Source Files\src\tm2</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Desktop\librealsense\src\tm2\tm-info.cpp">
+      <Filter>Source Files\src\tm2</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Desktop\librealsense\src\algo.cpp">
+      <Filter>Source Files\src</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Desktop\librealsense\src\archive.cpp">
+      <Filter>Source Files\src</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Desktop\librealsense\src\backend.cpp">
+      <Filter>Source Files\src</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Desktop\librealsense\src\context.cpp">
+      <Filter>Source Files\src</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Desktop\librealsense\src\device.cpp">
+      <Filter>Source Files\src</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Desktop\librealsense\src\device_hub.cpp">
+      <Filter>Source Files\src</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Desktop\librealsense\src\environment.cpp">
+      <Filter>Source Files\src</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Desktop\librealsense\src\error-handling.cpp">
+      <Filter>Source Files\src</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Desktop\librealsense\src\firmware_logger_device.cpp">
+      <Filter>Source Files\src</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Desktop\librealsense\src\global_timestamp_reader.cpp">
+      <Filter>Source Files\src</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Desktop\librealsense\src\hdr-config.cpp">
+      <Filter>Source Files\src</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Desktop\librealsense\src\hw-monitor.cpp">
+      <Filter>Source Files\src</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Desktop\librealsense\src\image.cpp">
+      <Filter>Source Files\src</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Desktop\librealsense\src\image-avx.cpp">
+      <Filter>Source Files\src</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Desktop\librealsense\src\log.cpp">
+      <Filter>Source Files\src</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Desktop\librealsense\src\option.cpp">
+      <Filter>Source Files\src</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Desktop\librealsense\src\rs.cpp">
+      <Filter>Source Files\src</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Desktop\librealsense\src\sensor.cpp">
+      <Filter>Source Files\src</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Desktop\librealsense\src\software-device.cpp">
+      <Filter>Source Files\src</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Desktop\librealsense\src\source.cpp">
+      <Filter>Source Files\src</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Desktop\librealsense\src\stream.cpp">
+      <Filter>Source Files\src</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Desktop\librealsense\src\sync.cpp">
+      <Filter>Source Files\src</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Desktop\librealsense\src\terminal-parser.cpp">
+      <Filter>Source Files\src</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Desktop\librealsense\src\types.cpp">
+      <Filter>Source Files\src</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Desktop\librealsense\src\verify.c">
+      <Filter>Source Files\src</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Desktop\librealsense\src\depth-to-rgb-calibration.cpp">
+      <Filter>Source Files\src</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Desktop\librealsense\third-party\sqlite\sqlite3.c">
+      <Filter>Source Files\third-party\sqlite</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Desktop\librealsense\third-party\easyloggingpp\src\easylogging++.cc">
+      <Filter>Source Files\third-party\easyloggingpp\src</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="D:\Desktop\librealsense\include\librealsense2\rs.hpp">
+      <Filter>Header Files\include\librealsense2</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Desktop\librealsense\include\librealsense2\rs.h">
+      <Filter>Header Files\include\librealsense2</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Desktop\librealsense\include\librealsense2\h\rs_types.h">
+      <Filter>Header Files\include\librealsense2\h</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Desktop\librealsense\include\librealsense2\h\rs_context.h">
+      <Filter>Header Files\include\librealsense2\h</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Desktop\librealsense\include\librealsense2\h\rs_device.h">
+      <Filter>Header Files\include\librealsense2\h</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Desktop\librealsense\include\librealsense2\h\rs_frame.h">
+      <Filter>Header Files\include\librealsense2\h</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Desktop\librealsense\include\librealsense2\h\rs_option.h">
+      <Filter>Header Files\include\librealsense2\h</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Desktop\librealsense\include\librealsense2\h\rs_processing.h">
+      <Filter>Header Files\include\librealsense2\h</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Desktop\librealsense\include\librealsense2\h\rs_record_playback.h">
+      <Filter>Header Files\include\librealsense2\h</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Desktop\librealsense\include\librealsense2\h\rs_sensor.h">
+      <Filter>Header Files\include\librealsense2\h</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Desktop\librealsense\include\librealsense2\h\rs_internal.h">
+      <Filter>Header Files\include\librealsense2\h</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Desktop\librealsense\include\librealsense2\h\rs_pipeline.h">
+      <Filter>Header Files\include\librealsense2\h</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Desktop\librealsense\include\librealsense2\h\rs_config.h">
+      <Filter>Header Files\include\librealsense2\h</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Desktop\librealsense\include\librealsense2\hpp\rs_types.hpp">
+      <Filter>Header Files\include\librealsense2\hpp</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Desktop\librealsense\include\librealsense2\hpp\rs_context.hpp">
+      <Filter>Header Files\include\librealsense2\hpp</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Desktop\librealsense\include\librealsense2\hpp\rs_device.hpp">
+      <Filter>Header Files\include\librealsense2\hpp</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Desktop\librealsense\include\librealsense2\hpp\rs_serializable_device.hpp">
+      <Filter>Header Files\include\librealsense2\hpp</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Desktop\librealsense\include\librealsense2\hpp\rs_export.hpp">
+      <Filter>Header Files\include\librealsense2\hpp</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Desktop\librealsense\include\librealsense2\hpp\rs_frame.hpp">
+      <Filter>Header Files\include\librealsense2\hpp</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Desktop\librealsense\include\librealsense2\hpp\rs_processing.hpp">
+      <Filter>Header Files\include\librealsense2\hpp</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Desktop\librealsense\include\librealsense2\hpp\rs_record_playback.hpp">
+      <Filter>Header Files\include\librealsense2\hpp</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Desktop\librealsense\include\librealsense2\hpp\rs_sensor.hpp">
+      <Filter>Header Files\include\librealsense2\hpp</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Desktop\librealsense\include\librealsense2\hpp\rs_options.hpp">
+      <Filter>Header Files\include\librealsense2\hpp</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Desktop\librealsense\include\librealsense2\hpp\rs_internal.hpp">
+      <Filter>Header Files\include\librealsense2\hpp</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Desktop\librealsense\include\librealsense2\hpp\rs_pipeline.hpp">
+      <Filter>Header Files\include\librealsense2\hpp</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Desktop\librealsense\include\librealsense2\rsutil.h">
+      <Filter>Header Files\include\librealsense2</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Desktop\librealsense\include\librealsense2\rs_advanced_mode.h">
+      <Filter>Header Files\include\librealsense2</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Desktop\librealsense\include\librealsense2\rs_advanced_mode.hpp">
+      <Filter>Header Files\include\librealsense2</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Desktop\librealsense\include\librealsense2\h\rs_advanced_mode_command.h">
+      <Filter>Header Files\include\librealsense2\h</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Desktop\librealsense\src\algo\depth-to-rgb-calibration\calibration-types.h">
+      <Filter>Header Files\src\algo\depth-to-rgb-calibration</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Desktop\librealsense\src\algo\depth-to-rgb-calibration\calibration.h">
+      <Filter>Header Files\src\algo\depth-to-rgb-calibration</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Desktop\librealsense\src\algo\depth-to-rgb-calibration\coeffs.h">
+      <Filter>Header Files\src\algo\depth-to-rgb-calibration</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Desktop\librealsense\src\algo\depth-to-rgb-calibration\cost.h">
+      <Filter>Header Files\src\algo\depth-to-rgb-calibration</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Desktop\librealsense\src\algo\depth-to-rgb-calibration\debug.h">
+      <Filter>Header Files\src\algo\depth-to-rgb-calibration</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Desktop\librealsense\src\algo\depth-to-rgb-calibration\frame-data.h">
+      <Filter>Header Files\src\algo\depth-to-rgb-calibration</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Desktop\librealsense\src\algo\depth-to-rgb-calibration\uvmap.h">
+      <Filter>Header Files\src\algo\depth-to-rgb-calibration</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Desktop\librealsense\src\algo\depth-to-rgb-calibration\optimizer.h">
+      <Filter>Header Files\src\algo\depth-to-rgb-calibration</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Desktop\librealsense\src\algo\depth-to-rgb-calibration\k-to-dsm.h">
+      <Filter>Header Files\src\algo\depth-to-rgb-calibration</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Desktop\librealsense\src\algo\depth-to-rgb-calibration\utils.h">
+      <Filter>Header Files\src\algo\depth-to-rgb-calibration</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Desktop\librealsense\src\core\streaming.h">
+      <Filter>Header Files\src\core</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Desktop\librealsense\src\core\debug.h">
+      <Filter>Header Files\src\core</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Desktop\librealsense\src\core\advanced_mode.h">
+      <Filter>Header Files\src\core</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Desktop\librealsense\src\core\roi.h">
+      <Filter>Header Files\src\core</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Desktop\librealsense\src\core\motion.h">
+      <Filter>Header Files\src\core</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Desktop\librealsense\src\core\video.h">
+      <Filter>Header Files\src\core</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Desktop\librealsense\src\core\options.h">
+      <Filter>Header Files\src\core</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Desktop\librealsense\src\core\info.h">
+      <Filter>Header Files\src\core</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Desktop\librealsense\src\core\extension.h">
+      <Filter>Header Files\src\core</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Desktop\librealsense\src\core\processing.h">
+      <Filter>Header Files\src\core</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Desktop\librealsense\src\core\serialization.h">
+      <Filter>Header Files\src\core</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Desktop\librealsense\src\ds5\ds5-factory.h">
+      <Filter>Header Files\src\ds5</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Desktop\librealsense\src\ds5\ds5-device.h">
+      <Filter>Header Files\src\ds5</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Desktop\librealsense\src\ds5\ds5-options.h">
+      <Filter>Header Files\src\ds5</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Desktop\librealsense\src\ds5\ds5-private.h">
+      <Filter>Header Files\src\ds5</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Desktop\librealsense\src\ds5\ds5-timestamp.h">
+      <Filter>Header Files\src\ds5</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Desktop\librealsense\src\ds5\ds5-active.h">
+      <Filter>Header Files\src\ds5</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Desktop\librealsense\src\ds5\ds5-motion.h">
+      <Filter>Header Files\src\ds5</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Desktop\librealsense\src\ds5\ds5-nonmonochrome.h">
+      <Filter>Header Files\src\ds5</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Desktop\librealsense\src\ds5\ds5-color.h">
+      <Filter>Header Files\src\ds5</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Desktop\librealsense\src\ds5\ds5-fw-update-device.h">
+      <Filter>Header Files\src\ds5</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Desktop\librealsense\src\ds5\advanced_mode\json_loader.hpp">
+      <Filter>Header Files\src\ds5\advanced_mode</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Desktop\librealsense\src\ds5\advanced_mode\presets.h">
+      <Filter>Header Files\src\ds5\advanced_mode</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Desktop\librealsense\src\ds5\ds5-auto-calibration.h">
+      <Filter>Header Files\src\ds5</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Desktop\librealsense\src\ivcam\ivcam-private.h">
+      <Filter>Header Files\src\ivcam</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Desktop\librealsense\src\ivcam\sr300.h">
+      <Filter>Header Files\src\ivcam</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Desktop\librealsense\src\ivcam\sr300-fw-update-device.h">
+      <Filter>Header Files\src\ivcam</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Desktop\librealsense\src\l500\l500-depth.h">
+      <Filter>Header Files\src\l500</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Desktop\librealsense\src\l500\l500-private.h">
+      <Filter>Header Files\src\l500</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Desktop\librealsense\src\l500\l500-color.h">
+      <Filter>Header Files\src\l500</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Desktop\librealsense\src\l500\l500-device.h">
+      <Filter>Header Files\src\l500</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Desktop\librealsense\src\l500\l500-motion.h">
+      <Filter>Header Files\src\l500</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Desktop\librealsense\src\l500\l500-factory.h">
+      <Filter>Header Files\src\l500</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Desktop\librealsense\src\l500\l500-fw-update-device.h">
+      <Filter>Header Files\src\l500</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Desktop\librealsense\src\l500\l500-serializable.h">
+      <Filter>Header Files\src\l500</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Desktop\librealsense\src\l500\l500-options.h">
+      <Filter>Header Files\src\l500</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Desktop\librealsense\src\l500\ac-trigger.h">
+      <Filter>Header Files\src\l500</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Desktop\librealsense\src\media\record\record_device.h">
+      <Filter>Header Files\src\media\record</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Desktop\librealsense\src\media\record\record_sensor.h">
+      <Filter>Header Files\src\media\record</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Desktop\librealsense\src\media\playback\playback_device.h">
+      <Filter>Header Files\src\media\playback</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Desktop\librealsense\src\media\playback\playback_sensor.h">
+      <Filter>Header Files\src\media\playback</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Desktop\librealsense\src\media\ros\ros_reader.h">
+      <Filter>Header Files\src\media\ros</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Desktop\librealsense\src\media\ros\ros_writer.h">
+      <Filter>Header Files\src\media\ros</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Desktop\librealsense\src\media\ros\ros_file_format.h">
+      <Filter>Header Files\src\media\ros</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Desktop\librealsense\src\mock\sql.h">
+      <Filter>Header Files\src\mock</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Desktop\librealsense\src\mock\recorder.h">
+      <Filter>Header Files\src\mock</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Desktop\librealsense\src\proc\sse\sse-align.h">
+      <Filter>Header Files\src\proc\sse</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Desktop\librealsense\src\proc\sse\sse-pointcloud.h">
+      <Filter>Header Files\src\proc\sse</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Desktop\librealsense\src\proc\processing-blocks-factory.h">
+      <Filter>Header Files\src\proc</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Desktop\librealsense\src\proc\align.h">
+      <Filter>Header Files\src\proc</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Desktop\librealsense\src\proc\colorizer.h">
+      <Filter>Header Files\src\proc</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Desktop\librealsense\src\proc\pointcloud.h">
+      <Filter>Header Files\src\proc</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Desktop\librealsense\src\proc\occlusion-filter.h">
+      <Filter>Header Files\src\proc</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Desktop\librealsense\src\proc\synthetic-stream.h">
+      <Filter>Header Files\src\proc</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Desktop\librealsense\src\proc\decimation-filter.h">
+      <Filter>Header Files\src\proc</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Desktop\librealsense\src\proc\spatial-filter.h">
+      <Filter>Header Files\src\proc</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Desktop\librealsense\src\proc\temporal-filter.h">
+      <Filter>Header Files\src\proc</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Desktop\librealsense\src\proc\hdr-merge.h">
+      <Filter>Header Files\src\proc</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Desktop\librealsense\src\proc\sequence_id_filter.h">
+      <Filter>Header Files\src\proc</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Desktop\librealsense\src\proc\hole-filling-filter.h">
+      <Filter>Header Files\src\proc</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Desktop\librealsense\src\proc\syncer-processing-block.h">
+      <Filter>Header Files\src\proc</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Desktop\librealsense\src\proc\disparity-transform.h">
+      <Filter>Header Files\src\proc</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Desktop\librealsense\src\proc\y8i-to-y8y8.h">
+      <Filter>Header Files\src\proc</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Desktop\librealsense\src\proc\y12i-to-y16y16.h">
+      <Filter>Header Files\src\proc</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Desktop\librealsense\src\proc\identity-processing-block.h">
+      <Filter>Header Files\src\proc</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Desktop\librealsense\src\proc\threshold.h">
+      <Filter>Header Files\src\proc</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Desktop\librealsense\src\proc\rates-printer.h">
+      <Filter>Header Files\src\proc</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Desktop\librealsense\src\proc\zero-order.h">
+      <Filter>Header Files\src\proc</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Desktop\librealsense\src\proc\units-transform.h">
+      <Filter>Header Files\src\proc</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Desktop\librealsense\src\proc\rotation-transform.h">
+      <Filter>Header Files\src\proc</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Desktop\librealsense\src\proc\color-formats-converter.h">
+      <Filter>Header Files\src\proc</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Desktop\librealsense\src\proc\depth-formats-converter.h">
+      <Filter>Header Files\src\proc</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Desktop\librealsense\src\proc\motion-transform.h">
+      <Filter>Header Files\src\proc</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Desktop\librealsense\src\proc\auto-exposure-processor.h">
+      <Filter>Header Files\src\proc</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Desktop\librealsense\src\proc\depth-decompress.h">
+      <Filter>Header Files\src\proc</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Desktop\librealsense\src\res\resource.h">
+      <Filter>Header Files\src\res</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Desktop\librealsense\src\pipeline\pipeline.h">
+      <Filter>Header Files\src\pipeline</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Desktop\librealsense\src\pipeline\config.h">
+      <Filter>Header Files\src\pipeline</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Desktop\librealsense\src\pipeline\profile.h">
+      <Filter>Header Files\src\pipeline</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Desktop\librealsense\src\pipeline\resolver.h">
+      <Filter>Header Files\src\pipeline</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Desktop\librealsense\src\pipeline\aggregator.h">
+      <Filter>Header Files\src\pipeline</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Desktop\librealsense\src\usb\usb-endpoint.h">
+      <Filter>Header Files\src\usb</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Desktop\librealsense\src\usb\usb-interface.h">
+      <Filter>Header Files\src\usb</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Desktop\librealsense\src\usb\usb-messenger.h">
+      <Filter>Header Files\src\usb</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Desktop\librealsense\src\usb\usb-types.h">
+      <Filter>Header Files\src\usb</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Desktop\librealsense\src\usb\usb-device.h">
+      <Filter>Header Files\src\usb</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Desktop\librealsense\src\usb\usb-enumerator.h">
+      <Filter>Header Files\src\usb</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Desktop\librealsense\src\usb\usb-request.h">
+      <Filter>Header Files\src\usb</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Desktop\librealsense\src\fw-logs\fw-log-data.h">
+      <Filter>Header Files\src\fw-logs</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Desktop\librealsense\src\fw-logs\fw-logs-formating-options.h">
+      <Filter>Header Files\src\fw-logs</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Desktop\librealsense\src\fw-logs\fw-logs-parser.h">
+      <Filter>Header Files\src\fw-logs</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Desktop\librealsense\src\fw-logs\fw-logs-xml-helper.h">
+      <Filter>Header Files\src\fw-logs</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Desktop\librealsense\src\fw-logs\fw-string-formatter.h">
+      <Filter>Header Files\src\fw-logs</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Desktop\librealsense\src\fw-update\fw-update-device-interface.h">
+      <Filter>Header Files\src\fw-update</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Desktop\librealsense\src\fw-update\fw-update-device.h">
+      <Filter>Header Files\src\fw-update</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Desktop\librealsense\src\fw-update\fw-update-factory.h">
+      <Filter>Header Files\src\fw-update</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Desktop\librealsense\src\fw-update\fw-update-unsigned.h">
+      <Filter>Header Files\src\fw-update</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Desktop\librealsense\src\win\win-helpers.h">
+      <Filter>Header Files\src\win</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Desktop\librealsense\src\winusb\handle-winusb.h">
+      <Filter>Header Files\src\winusb</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Desktop\librealsense\src\winusb\endpoint-winusb.h">
+      <Filter>Header Files\src\winusb</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Desktop\librealsense\src\winusb\interface-winusb.h">
+      <Filter>Header Files\src\winusb</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Desktop\librealsense\src\winusb\device-winusb.h">
+      <Filter>Header Files\src\winusb</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Desktop\librealsense\src\winusb\messenger-winusb.h">
+      <Filter>Header Files\src\winusb</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Desktop\librealsense\src\winusb\request-winusb.h">
+      <Filter>Header Files\src\winusb</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Desktop\librealsense\src\mf\mf-uvc.h">
+      <Filter>Header Files\src\mf</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Desktop\librealsense\src\mf\mf-hid.h">
+      <Filter>Header Files\src\mf</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Desktop\librealsense\src\mf\mf-backend.h">
+      <Filter>Header Files\src\mf</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Desktop\librealsense\src\tm2\tm-boot.h">
+      <Filter>Header Files\src\tm2</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Desktop\librealsense\src\tm2\tm-device.h">
+      <Filter>Header Files\src\tm2</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Desktop\librealsense\src\tm2\tm-info.h">
+      <Filter>Header Files\src\tm2</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Desktop\librealsense\src\tm2\t265-messages.h">
+      <Filter>Header Files\src\tm2</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Desktop\librealsense\src\algo.h">
+      <Filter>Header Files\src</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Desktop\librealsense\src\api.h">
+      <Filter>Header Files\src</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Desktop\librealsense\src\archive.h">
+      <Filter>Header Files\src</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Desktop\librealsense\src\backend.h">
+      <Filter>Header Files\src</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Desktop\librealsense\src\concurrency.h">
+      <Filter>Header Files\src</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Desktop\librealsense\src\context.h">
+      <Filter>Header Files\src</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Desktop\librealsense\src\device.h">
+      <Filter>Header Files\src</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Desktop\librealsense\src\device_hub.h">
+      <Filter>Header Files\src</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Desktop\librealsense\src\environment.h">
+      <Filter>Header Files\src</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Desktop\librealsense\src\log.h">
+      <Filter>Header Files\src</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Desktop\librealsense\src\error-handling.h">
+      <Filter>Header Files\src</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Desktop\librealsense\src\firmware_logger_device.h">
+      <Filter>Header Files\src</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Desktop\librealsense\src\frame-archive.h">
+      <Filter>Header Files\src</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Desktop\librealsense\src\global_timestamp_reader.h">
+      <Filter>Header Files\src</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Desktop\librealsense\src\hdr-config.h">
+      <Filter>Header Files\src</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Desktop\librealsense\src\hw-monitor.h">
+      <Filter>Header Files\src</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Desktop\librealsense\src\image.h">
+      <Filter>Header Files\src</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Desktop\librealsense\src\image-avx.h">
+      <Filter>Header Files\src</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Desktop\librealsense\src\metadata.h">
+      <Filter>Header Files\src</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Desktop\librealsense\src\metadata-parser.h">
+      <Filter>Header Files\src</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Desktop\librealsense\src\option.h">
+      <Filter>Header Files\src</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Desktop\librealsense\src\sensor.h">
+      <Filter>Header Files\src</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Desktop\librealsense\src\software-device.h">
+      <Filter>Header Files\src</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Desktop\librealsense\src\source.h">
+      <Filter>Header Files\src</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Desktop\librealsense\src\stream.h">
+      <Filter>Header Files\src</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Desktop\librealsense\src\sync.h">
+      <Filter>Header Files\src</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Desktop\librealsense\src\terminal-parser.h">
+      <Filter>Header Files\src</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Desktop\librealsense\src\types.h">
+      <Filter>Header Files\src</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Desktop\librealsense\src\command_transfer.h">
+      <Filter>Header Files\src</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Desktop\librealsense\src\auto-calibrated-device.h">
+      <Filter>Header Files\src</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Desktop\librealsense\src\device-calibration.h">
+      <Filter>Header Files\src</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Desktop\librealsense\src\calibrated-sensor.h">
+      <Filter>Header Files\src</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Desktop\librealsense\src\serializable-interface.h">
+      <Filter>Header Files\src</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Desktop\librealsense\src\depth-to-rgb-calibration.h">
+      <Filter>Header Files\src</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Desktop\librealsense\third-party\sqlite\sqlite3.h">
+      <Filter>Header Files\third-party\sqlite</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Desktop\librealsense\third-party\easyloggingpp\src\easylogging++.h">
+      <Filter>Header Files\third-party\easyloggingpp\src</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\Desktop\librealsense\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="D:\Desktop\librealsense\src\realsense.def">
+      <Filter>Header Files\src</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{284E8218-4F86-3856-B7B7-63D1DD3F7485}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\include">
+      <UniqueIdentifier>{7A423591-6794-3BED-BE7B-3B809AF95517}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\include\librealsense2">
+      <UniqueIdentifier>{D54AE078-E2F5-395E-BB00-67D663936492}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\include\librealsense2\h">
+      <UniqueIdentifier>{5B011AC7-1FCF-3FFE-8224-4DB3E60861B0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\include\librealsense2\hpp">
+      <UniqueIdentifier>{03205EF7-3CD0-385F-A8AB-F2465F934A9A}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\src">
+      <UniqueIdentifier>{3533C5E6-EC50-3BC1-80A0-D33E3D5EE465}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\src\algo">
+      <UniqueIdentifier>{AE22A47E-FC07-3D0E-9382-091E076EED25}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\src\algo\depth-to-rgb-calibration">
+      <UniqueIdentifier>{6CCE7EB4-3D2D-38AE-BE56-B019AEC16B80}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\src\core">
+      <UniqueIdentifier>{C5687E4E-2421-3791-BEE9-C312D2E5A946}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\src\ds5">
+      <UniqueIdentifier>{DE94A055-C21F-33A1-92CB-CF77739D2872}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\src\ds5\advanced_mode">
+      <UniqueIdentifier>{439CEB64-D191-35B5-B963-4DBAA73F0F58}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\src\fw-logs">
+      <UniqueIdentifier>{6C33392E-3EA4-345A-98EA-EA3B28BBD12E}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\src\fw-update">
+      <UniqueIdentifier>{CE81D10D-98B6-308B-A714-A49881CE4DB0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\src\ivcam">
+      <UniqueIdentifier>{697D23C6-D828-3ECD-B217-14FAEC5FF3FA}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\src\l500">
+      <UniqueIdentifier>{355ACDC4-F5AC-3B4E-AF0B-B4FA8AF07475}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\src\media">
+      <UniqueIdentifier>{51B7B1EC-5A7F-37E4-B2D9-BD0EE71343B2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\src\media\playback">
+      <UniqueIdentifier>{F2E96BFB-D9E9-3CFD-87AA-31045F32A1B1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\src\media\record">
+      <UniqueIdentifier>{AA029101-D37C-3DE9-A04E-DF965F658AD3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\src\media\ros">
+      <UniqueIdentifier>{16346FC5-B973-3B1E-AFB2-1C2F2D0BCA7A}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\src\mf">
+      <UniqueIdentifier>{36BA4769-89B0-37FF-BBF6-E64B055B63EC}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\src\mock">
+      <UniqueIdentifier>{1C6FF069-C19D-32EF-BBC5-D1A2696519CB}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\src\pipeline">
+      <UniqueIdentifier>{4AE0C8DD-8775-3E93-B31A-ECCAE9F40D31}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\src\proc">
+      <UniqueIdentifier>{11AA6D3A-F994-33F9-9EA4-B9A287AAA8B0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\src\proc\sse">
+      <UniqueIdentifier>{28CE3039-5781-36F9-BF5E-B77DCB2E2B79}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\src\res">
+      <UniqueIdentifier>{67BCEAA8-A5B5-36DD-99FC-5A464B8D81CA}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\src\tm2">
+      <UniqueIdentifier>{4F34DA60-E6EA-3673-A22D-64C61AEC90DB}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\src\usb">
+      <UniqueIdentifier>{3640F160-83CD-324D-A182-DA9586C63BEA}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\src\win">
+      <UniqueIdentifier>{CD5EAA34-DD1A-3B7A-90B9-3EA3A8D61186}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\src\winusb">
+      <UniqueIdentifier>{DBDE22DD-8E0D-3354-BE89-F11F11B6037A}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\third-party">
+      <UniqueIdentifier>{E6F97E75-1C9B-3410-BC8D-E687BD9F219B}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\third-party\easyloggingpp">
+      <UniqueIdentifier>{F328542B-C2F8-39B7-8D1A-8657A14D3BC6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\third-party\easyloggingpp\src">
+      <UniqueIdentifier>{3ACE528B-6B8F-33D8-8D5E-452528A3A133}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\third-party\sqlite">
+      <UniqueIdentifier>{B9AF6857-F06C-3D86-8A58-681CDA0D664F}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{CEC3990D-8F57-3129-AB5F-0D47994E7C08}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\src">
+      <UniqueIdentifier>{4DCDA450-EF7E-32E4-A5E2-171E75652BEF}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\src\algo">
+      <UniqueIdentifier>{42A7E644-852D-33EB-B235-D019BD01E151}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\src\algo\depth-to-rgb-calibration">
+      <UniqueIdentifier>{0F52458D-EB1F-3324-B247-1766BA59A509}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\src\ds5">
+      <UniqueIdentifier>{D73DB1F3-662A-3ED6-BCA7-544D3011AAD2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\src\ds5\advanced_mode">
+      <UniqueIdentifier>{4DCE7CBC-EE2A-3FE8-BA3D-3B8C4AE589BE}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\src\fw-logs">
+      <UniqueIdentifier>{8AEB2FD4-7FAC-31A8-9039-5367EFBD1415}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\src\fw-update">
+      <UniqueIdentifier>{D91D7907-86D9-3124-B223-448DBDE5D082}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\src\ivcam">
+      <UniqueIdentifier>{AC91CF57-BFD4-3667-AF2A-12ECEBBE43F6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\src\l500">
+      <UniqueIdentifier>{AB8DBDA5-3C1F-34CF-9332-0B0805BBC8F6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\src\media">
+      <UniqueIdentifier>{7ECB55E6-3ACC-3B2F-B14C-BE1FD985093C}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\src\media\playback">
+      <UniqueIdentifier>{682B5BD7-450D-3B1E-A72E-C9946AF32257}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\src\media\record">
+      <UniqueIdentifier>{10E77865-20CB-343F-BD87-34B0F6BFFD39}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\src\media\ros">
+      <UniqueIdentifier>{D82D1E8C-5B4C-3F5C-8409-48E3B9013378}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\src\mf">
+      <UniqueIdentifier>{EF58B41B-AB6F-3FFB-8C90-C95C298EF64A}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\src\mock">
+      <UniqueIdentifier>{14E28F47-94BB-338E-8B25-EE1C2ABDC65E}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\src\pipeline">
+      <UniqueIdentifier>{F58F7943-5FDD-3E4F-BB4C-454F68737CF9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\src\proc">
+      <UniqueIdentifier>{7C8E32E6-2D18-3F83-AA4E-D8C663DA601D}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\src\proc\sse">
+      <UniqueIdentifier>{6A104774-0871-34D8-B976-F34F8CB95E30}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\src\tm2">
+      <UniqueIdentifier>{1CFFCC0C-D530-36EB-8B2A-6E45B21CCB7D}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\src\win">
+      <UniqueIdentifier>{77E460AA-FFC4-37A4-9D2E-BF4763CFF241}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\src\winusb">
+      <UniqueIdentifier>{A2083AB0-C27B-3511-807E-94D86D56CD56}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\third-party">
+      <UniqueIdentifier>{F6483B29-9200-363A-A433-5C3DB3ED8B4E}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\third-party\easyloggingpp">
+      <UniqueIdentifier>{89F25F1B-7ED1-3A01-A740-C642C36D6BB4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\third-party\easyloggingpp\src">
+      <UniqueIdentifier>{AAB27821-F365-322C-A724-D21F6AC520D2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\third-party\sqlite">
+      <UniqueIdentifier>{1C03A90E-F70C-3757-A1E6-ED252C8D3062}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,280 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|x64">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|x64">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{E1AFD228-BC0E-3C84-BADC-8F1C38482B25}</ProjectGuid>
+    <WindowsTargetPlatformVersion>10.0.18362.0</WindowsTargetPlatformVersion>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>x64</Platform>
+    <ProjectName>ALL_BUILD</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>D:\Desktop\librealsense\realsense2;D:\Desktop\librealsense\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>D:\Desktop\librealsense\realsense2;D:\Desktop\librealsense\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>D:\Desktop\librealsense\realsense2;D:\Desktop\librealsense\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>D:\Desktop\librealsense\realsense2;D:\Desktop\librealsense\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\Desktop\librealsense\examples\CMakeLists.txt">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule D:/Desktop/librealsense/examples/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SD:/Desktop/librealsense -BD:/Desktop/librealsense/build --check-stamp-file D:/Desktop/librealsense/build/examples/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Program Files\CMake\share\cmake-3.17\Modules\FindOpenGL.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\FindPackageMessage.cmake;D:\Desktop\librealsense\CMake\opengl_config.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\Desktop\librealsense\build\examples\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule D:/Desktop/librealsense/examples/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SD:/Desktop/librealsense -BD:/Desktop/librealsense/build --check-stamp-file D:/Desktop/librealsense/build/examples/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Program Files\CMake\share\cmake-3.17\Modules\FindOpenGL.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\FindPackageMessage.cmake;D:\Desktop\librealsense\CMake\opengl_config.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\Desktop\librealsense\build\examples\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule D:/Desktop/librealsense/examples/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SD:/Desktop/librealsense -BD:/Desktop/librealsense/build --check-stamp-file D:/Desktop/librealsense/build/examples/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Program Files\CMake\share\cmake-3.17\Modules\FindOpenGL.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\FindPackageMessage.cmake;D:\Desktop\librealsense\CMake\opengl_config.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\Desktop\librealsense\build\examples\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule D:/Desktop/librealsense/examples/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SD:/Desktop/librealsense -BD:/Desktop/librealsense/build --check-stamp-file D:/Desktop/librealsense/build/examples/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Program Files\CMake\share\cmake-3.17\Modules\FindOpenGL.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\FindPackageMessage.cmake;D:\Desktop\librealsense\CMake\opengl_config.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\Desktop\librealsense\build\examples\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="D:\Desktop\librealsense\build\ZERO_CHECK.vcxproj">
+      <Project>{E9ECF5A3-D6C5-3C1E-A39C-B1B588B5E85E}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="D:\Desktop\librealsense\build\examples\align\rs-align.vcxproj">
+      <Project>{7FB01521-2569-3595-89F6-A60252E187DB}</Project>
+      <Name>rs-align</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Desktop\librealsense\build\examples\align-advanced\rs-align-advanced.vcxproj">
+      <Project>{4FC032FE-9F6C-3894-BB8C-84C45D2F1005}</Project>
+      <Name>rs-align-advanced</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Desktop\librealsense\build\examples\ar-advanced\rs-ar-advanced.vcxproj">
+      <Project>{55E264AD-5F90-3FDB-835F-3F8C6E191E9C}</Project>
+      <Name>rs-ar-advanced</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Desktop\librealsense\build\examples\ar-basic\rs-ar-basic.vcxproj">
+      <Project>{54AA87DA-DF13-358B-98BF-E6DE0A3ACB12}</Project>
+      <Name>rs-ar-basic</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Desktop\librealsense\build\examples\callback\rs-callback.vcxproj">
+      <Project>{72E992EC-B975-3765-9F7D-CC9A2901DA8C}</Project>
+      <Name>rs-callback</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Desktop\librealsense\build\examples\capture\rs-capture.vcxproj">
+      <Project>{F34E7FB2-1AC6-39C1-AFAB-44ADAD6CFC4D}</Project>
+      <Name>rs-capture</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Desktop\librealsense\build\examples\C\color\rs-color.vcxproj">
+      <Project>{58DD2134-870C-301D-8B69-185165ECA871}</Project>
+      <Name>rs-color</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Desktop\librealsense\build\examples\C\depth\rs-depth.vcxproj">
+      <Project>{8FA9C519-089A-3992-8050-64FB7543BD06}</Project>
+      <Name>rs-depth</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Desktop\librealsense\build\examples\C\distance\rs-distance.vcxproj">
+      <Project>{E8793F7E-FBE5-3484-AA46-7B14630A8758}</Project>
+      <Name>rs-distance</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Desktop\librealsense\build\examples\gl\rs-gl.vcxproj">
+      <Project>{ADCEEE98-D97F-38FE-A370-41BE43FC927F}</Project>
+      <Name>rs-gl</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Desktop\librealsense\build\examples\hdr\rs-hdr.vcxproj">
+      <Project>{DC734A0B-36C8-3B8E-BC79-3A973066B995}</Project>
+      <Name>rs-hdr</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Desktop\librealsense\build\examples\hello-realsense\rs-hello-realsense.vcxproj">
+      <Project>{35925C4B-1CE5-3CC0-8498-97A51FD93C78}</Project>
+      <Name>rs-hello-realsense</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Desktop\librealsense\build\examples\measure\rs-measure.vcxproj">
+      <Project>{62EAC7ED-B650-379D-A3FC-A63889043037}</Project>
+      <Name>rs-measure</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Desktop\librealsense\build\examples\motion\rs-motion.vcxproj">
+      <Project>{2BDDEEE6-E7BB-3E59-9DCE-6B25DA1D69F2}</Project>
+      <Name>rs-motion</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Desktop\librealsense\build\examples\multicam\rs-multicam.vcxproj">
+      <Project>{CE96890D-8449-369C-B588-DBEAD86D0A79}</Project>
+      <Name>rs-multicam</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Desktop\librealsense\build\examples\pointcloud\rs-pointcloud.vcxproj">
+      <Project>{FC173D9D-AA91-3522-A40E-42CDE5863025}</Project>
+      <Name>rs-pointcloud</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Desktop\librealsense\build\examples\pose\rs-pose.vcxproj">
+      <Project>{7B4F45F7-021C-3609-8F33-C3516970F839}</Project>
+      <Name>rs-pose</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Desktop\librealsense\build\examples\pose-and-image\rs-pose-and-image.vcxproj">
+      <Project>{AFDD9884-2C68-3D58-997D-DA55F5DDC570}</Project>
+      <Name>rs-pose-and-image</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Desktop\librealsense\build\examples\pose-predict\rs-pose-predict.vcxproj">
+      <Project>{180383BF-4B77-3E78-BF04-3925A627FB61}</Project>
+      <Name>rs-pose-predict</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Desktop\librealsense\build\examples\post-processing\rs-post-processing.vcxproj">
+      <Project>{8DB2CCB1-3F4B-3553-A9AD-3DAFF13D5629}</Project>
+      <Name>rs-post-processing</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Desktop\librealsense\build\examples\record-playback\rs-record-playback.vcxproj">
+      <Project>{CD886608-A08A-33AE-8884-BA274A27D54F}</Project>
+      <Name>rs-record-playback</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Desktop\librealsense\build\examples\save-to-disk\rs-save-to-disk.vcxproj">
+      <Project>{9A009E42-9805-35D9-BAAC-FE4EA476FF17}</Project>
+      <Name>rs-save-to-disk</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Desktop\librealsense\build\examples\sensor-control\rs-sensor-control.vcxproj">
+      <Project>{297DE4C5-8C6F-367F-B581-575A389D8EFC}</Project>
+      <Name>rs-sensor-control</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Desktop\librealsense\build\examples\software-device\rs-software-device.vcxproj">
+      <Project>{2D3345E2-2EA9-3823-AEA2-EBABE782C48C}</Project>
+      <Name>rs-software-device</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Desktop\librealsense\build\examples\tracking-and-depth\rs-tracking-and-depth.vcxproj">
+      <Project>{E1C41807-FB2A-3655-BA9F-F6BD369D708A}</Project>
+      <Name>rs-tracking-and-depth</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Desktop\librealsense\build\examples\trajectory\rs-trajectory.vcxproj">
+      <Project>{CF06F971-E2AF-31A6-9624-C66E6B41F277}</Project>
+      <Name>rs-trajectory</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

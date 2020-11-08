@@ -1,0 +1,685 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|x64">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|x64">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{9D30B05D-2D5C-3A37-85A8-644B61B1F48A}</ProjectGuid>
+    <WindowsTargetPlatformVersion>10.0.18362.0</WindowsTargetPlatformVersion>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>x64</Platform>
+    <ProjectName>realsense2</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\Desktop\librealsense\build\Debug\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">realsense2.dir\Debug\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">realsense2d</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.dll</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\Desktop\librealsense\build\Release\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">realsense2.dir\Release\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">realsense2</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.dll</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\Desktop\librealsense\build\MinSizeRel\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">realsense2.dir\MinSizeRel\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">realsense2</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">.dll</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\Desktop\librealsense\build\RelWithDebInfo\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">realsense2.dir\RelWithDebInfo\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">realsense2</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">.dll</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">true</GenerateManifest>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>D:\Desktop\librealsense\build;D:\Desktop\librealsense\realsense2;D:\Desktop\librealsense\src;D:\Desktop\librealsense\third-party\realsense-file\rosbag\console_bridge\include;D:\Desktop\librealsense\third-party\realsense-file\rosbag\cpp_common\include;D:\Desktop\librealsense\third-party\realsense-file\rosbag\rosbag_storage\include;D:\Desktop\librealsense\third-party\realsense-file\rosbag\roscpp_serialization\include;D:\Desktop\librealsense\third-party\realsense-file\rosbag\rostime\include;D:\Desktop\librealsense\third-party\realsense-file\rosbag\roscpp_traits\include;D:\Desktop\librealsense\third-party\realsense-file\rosbag\roslz4\include;D:\Desktop\librealsense\third-party\realsense-file\rosbag\msgs;D:\Desktop\librealsense\third-party\realsense-file\boost;D:\Desktop\librealsense\third-party\realsense-file\lz4\lib;D:\Desktop\librealsense\include;D:\Desktop\librealsense\build\common\fw;D:\Desktop\librealsense\build\third-party\libusb\libusb;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /bigobj</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4819</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;WITH_TRACKING=1;_UNICODE;NOMINMAX;ELPP_THREAD_SAFE;ELPP_NO_DEFAULT_LOG_FILE;BUILD_EASYLOGGINGPP;HWM_OVER_XU;BUILD_SHARED_LIBS;RS2_USE_WMF_BACKEND;UNICODE;__SSSE3__;_CRT_SECURE_NO_WARNINGS;CMAKE_INTDIR="Debug";realsense2_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;WITH_TRACKING=1;_UNICODE;NOMINMAX;ELPP_THREAD_SAFE;ELPP_NO_DEFAULT_LOG_FILE;BUILD_EASYLOGGINGPP;HWM_OVER_XU;BUILD_SHARED_LIBS;RS2_USE_WMF_BACKEND;UNICODE;__SSSE3__;_CRT_SECURE_NO_WARNINGS;CMAKE_INTDIR=\"Debug\";realsense2_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\Desktop\librealsense\build;D:\Desktop\librealsense\realsense2;D:\Desktop\librealsense\src;D:\Desktop\librealsense\third-party\realsense-file\rosbag\console_bridge\include;D:\Desktop\librealsense\third-party\realsense-file\rosbag\cpp_common\include;D:\Desktop\librealsense\third-party\realsense-file\rosbag\rosbag_storage\include;D:\Desktop\librealsense\third-party\realsense-file\rosbag\roscpp_serialization\include;D:\Desktop\librealsense\third-party\realsense-file\rosbag\rostime\include;D:\Desktop\librealsense\third-party\realsense-file\rosbag\roscpp_traits\include;D:\Desktop\librealsense\third-party\realsense-file\rosbag\roslz4\include;D:\Desktop\librealsense\third-party\realsense-file\rosbag\msgs;D:\Desktop\librealsense\third-party\realsense-file\boost;D:\Desktop\librealsense\third-party\realsense-file\lz4\lib;D:\Desktop\librealsense\include;D:\Desktop\librealsense\build\common\fw;D:\Desktop\librealsense\build\third-party\libusb\libusb;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\Desktop\librealsense\build;D:\Desktop\librealsense\realsense2;D:\Desktop\librealsense\src;D:\Desktop\librealsense\third-party\realsense-file\rosbag\console_bridge\include;D:\Desktop\librealsense\third-party\realsense-file\rosbag\cpp_common\include;D:\Desktop\librealsense\third-party\realsense-file\rosbag\rosbag_storage\include;D:\Desktop\librealsense\third-party\realsense-file\rosbag\roscpp_serialization\include;D:\Desktop\librealsense\third-party\realsense-file\rosbag\rostime\include;D:\Desktop\librealsense\third-party\realsense-file\rosbag\roscpp_traits\include;D:\Desktop\librealsense\third-party\realsense-file\rosbag\roslz4\include;D:\Desktop\librealsense\third-party\realsense-file\rosbag\msgs;D:\Desktop\librealsense\third-party\realsense-file\boost;D:\Desktop\librealsense\third-party\realsense-file\lz4\lib;D:\Desktop\librealsense\include;D:\Desktop\librealsense\build\common\fw;D:\Desktop\librealsense\build\third-party\libusb\libusb;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>common\fw\Debug\fwd.lib;third-party\realsense-file\Debug\realsense-filed.lib;common\fw\fw.res;libusb_install\lib\usb.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>D:/Desktop/librealsense/build/Debug/realsense2d.lib</ImportLibrary>
+      <ModuleDefinitionFile>D:/Desktop/librealsense/src/realsense.def</ModuleDefinitionFile>
+      <ProgramDataBaseFile>D:/Desktop/librealsense/build/Debug/realsense2d.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>D:\Desktop\librealsense\build;D:\Desktop\librealsense\realsense2;D:\Desktop\librealsense\src;D:\Desktop\librealsense\third-party\realsense-file\rosbag\console_bridge\include;D:\Desktop\librealsense\third-party\realsense-file\rosbag\cpp_common\include;D:\Desktop\librealsense\third-party\realsense-file\rosbag\rosbag_storage\include;D:\Desktop\librealsense\third-party\realsense-file\rosbag\roscpp_serialization\include;D:\Desktop\librealsense\third-party\realsense-file\rosbag\rostime\include;D:\Desktop\librealsense\third-party\realsense-file\rosbag\roscpp_traits\include;D:\Desktop\librealsense\third-party\realsense-file\rosbag\roslz4\include;D:\Desktop\librealsense\third-party\realsense-file\rosbag\msgs;D:\Desktop\librealsense\third-party\realsense-file\boost;D:\Desktop\librealsense\third-party\realsense-file\lz4\lib;D:\Desktop\librealsense\include;D:\Desktop\librealsense\build\common\fw;D:\Desktop\librealsense\build\third-party\libusb\libusb;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /bigobj</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DisableSpecificWarnings>4819</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;WITH_TRACKING=1;_UNICODE;NOMINMAX;ELPP_THREAD_SAFE;ELPP_NO_DEFAULT_LOG_FILE;BUILD_EASYLOGGINGPP;HWM_OVER_XU;BUILD_SHARED_LIBS;RS2_USE_WMF_BACKEND;UNICODE;__SSSE3__;_CRT_SECURE_NO_WARNINGS;CMAKE_INTDIR="Release";realsense2_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;WITH_TRACKING=1;_UNICODE;NOMINMAX;ELPP_THREAD_SAFE;ELPP_NO_DEFAULT_LOG_FILE;BUILD_EASYLOGGINGPP;HWM_OVER_XU;BUILD_SHARED_LIBS;RS2_USE_WMF_BACKEND;UNICODE;__SSSE3__;_CRT_SECURE_NO_WARNINGS;CMAKE_INTDIR=\"Release\";realsense2_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\Desktop\librealsense\build;D:\Desktop\librealsense\realsense2;D:\Desktop\librealsense\src;D:\Desktop\librealsense\third-party\realsense-file\rosbag\console_bridge\include;D:\Desktop\librealsense\third-party\realsense-file\rosbag\cpp_common\include;D:\Desktop\librealsense\third-party\realsense-file\rosbag\rosbag_storage\include;D:\Desktop\librealsense\third-party\realsense-file\rosbag\roscpp_serialization\include;D:\Desktop\librealsense\third-party\realsense-file\rosbag\rostime\include;D:\Desktop\librealsense\third-party\realsense-file\rosbag\roscpp_traits\include;D:\Desktop\librealsense\third-party\realsense-file\rosbag\roslz4\include;D:\Desktop\librealsense\third-party\realsense-file\rosbag\msgs;D:\Desktop\librealsense\third-party\realsense-file\boost;D:\Desktop\librealsense\third-party\realsense-file\lz4\lib;D:\Desktop\librealsense\include;D:\Desktop\librealsense\build\common\fw;D:\Desktop\librealsense\build\third-party\libusb\libusb;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\Desktop\librealsense\build;D:\Desktop\librealsense\realsense2;D:\Desktop\librealsense\src;D:\Desktop\librealsense\third-party\realsense-file\rosbag\console_bridge\include;D:\Desktop\librealsense\third-party\realsense-file\rosbag\cpp_common\include;D:\Desktop\librealsense\third-party\realsense-file\rosbag\rosbag_storage\include;D:\Desktop\librealsense\third-party\realsense-file\rosbag\roscpp_serialization\include;D:\Desktop\librealsense\third-party\realsense-file\rosbag\rostime\include;D:\Desktop\librealsense\third-party\realsense-file\rosbag\roscpp_traits\include;D:\Desktop\librealsense\third-party\realsense-file\rosbag\roslz4\include;D:\Desktop\librealsense\third-party\realsense-file\rosbag\msgs;D:\Desktop\librealsense\third-party\realsense-file\boost;D:\Desktop\librealsense\third-party\realsense-file\lz4\lib;D:\Desktop\librealsense\include;D:\Desktop\librealsense\build\common\fw;D:\Desktop\librealsense\build\third-party\libusb\libusb;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>common\fw\Release\fw.lib;third-party\realsense-file\Release\realsense-file.lib;common\fw\fw.res;libusb_install\lib\usb.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>D:/Desktop/librealsense/build/Release/realsense2.lib</ImportLibrary>
+      <ModuleDefinitionFile>D:/Desktop/librealsense/src/realsense.def</ModuleDefinitionFile>
+      <ProgramDataBaseFile>D:/Desktop/librealsense/build/Release/realsense2.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>D:\Desktop\librealsense\build;D:\Desktop\librealsense\realsense2;D:\Desktop\librealsense\src;D:\Desktop\librealsense\third-party\realsense-file\rosbag\console_bridge\include;D:\Desktop\librealsense\third-party\realsense-file\rosbag\cpp_common\include;D:\Desktop\librealsense\third-party\realsense-file\rosbag\rosbag_storage\include;D:\Desktop\librealsense\third-party\realsense-file\rosbag\roscpp_serialization\include;D:\Desktop\librealsense\third-party\realsense-file\rosbag\rostime\include;D:\Desktop\librealsense\third-party\realsense-file\rosbag\roscpp_traits\include;D:\Desktop\librealsense\third-party\realsense-file\rosbag\roslz4\include;D:\Desktop\librealsense\third-party\realsense-file\rosbag\msgs;D:\Desktop\librealsense\third-party\realsense-file\boost;D:\Desktop\librealsense\third-party\realsense-file\lz4\lib;D:\Desktop\librealsense\include;D:\Desktop\librealsense\build\common\fw;D:\Desktop\librealsense\build\third-party\libusb\libusb;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /bigobj</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DisableSpecificWarnings>4819</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>MinSpace</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;WITH_TRACKING=1;_UNICODE;NOMINMAX;ELPP_THREAD_SAFE;ELPP_NO_DEFAULT_LOG_FILE;BUILD_EASYLOGGINGPP;HWM_OVER_XU;BUILD_SHARED_LIBS;RS2_USE_WMF_BACKEND;UNICODE;__SSSE3__;_CRT_SECURE_NO_WARNINGS;CMAKE_INTDIR="MinSizeRel";realsense2_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;WITH_TRACKING=1;_UNICODE;NOMINMAX;ELPP_THREAD_SAFE;ELPP_NO_DEFAULT_LOG_FILE;BUILD_EASYLOGGINGPP;HWM_OVER_XU;BUILD_SHARED_LIBS;RS2_USE_WMF_BACKEND;UNICODE;__SSSE3__;_CRT_SECURE_NO_WARNINGS;CMAKE_INTDIR=\"MinSizeRel\";realsense2_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\Desktop\librealsense\build;D:\Desktop\librealsense\realsense2;D:\Desktop\librealsense\src;D:\Desktop\librealsense\third-party\realsense-file\rosbag\console_bridge\include;D:\Desktop\librealsense\third-party\realsense-file\rosbag\cpp_common\include;D:\Desktop\librealsense\third-party\realsense-file\rosbag\rosbag_storage\include;D:\Desktop\librealsense\third-party\realsense-file\rosbag\roscpp_serialization\include;D:\Desktop\librealsense\third-party\realsense-file\rosbag\rostime\include;D:\Desktop\librealsense\third-party\realsense-file\rosbag\roscpp_traits\include;D:\Desktop\librealsense\third-party\realsense-file\rosbag\roslz4\include;D:\Desktop\librealsense\third-party\realsense-file\rosbag\msgs;D:\Desktop\librealsense\third-party\realsense-file\boost;D:\Desktop\librealsense\third-party\realsense-file\lz4\lib;D:\Desktop\librealsense\include;D:\Desktop\librealsense\build\common\fw;D:\Desktop\librealsense\build\third-party\libusb\libusb;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\Desktop\librealsense\build;D:\Desktop\librealsense\realsense2;D:\Desktop\librealsense\src;D:\Desktop\librealsense\third-party\realsense-file\rosbag\console_bridge\include;D:\Desktop\librealsense\third-party\realsense-file\rosbag\cpp_common\include;D:\Desktop\librealsense\third-party\realsense-file\rosbag\rosbag_storage\include;D:\Desktop\librealsense\third-party\realsense-file\rosbag\roscpp_serialization\include;D:\Desktop\librealsense\third-party\realsense-file\rosbag\rostime\include;D:\Desktop\librealsense\third-party\realsense-file\rosbag\roscpp_traits\include;D:\Desktop\librealsense\third-party\realsense-file\rosbag\roslz4\include;D:\Desktop\librealsense\third-party\realsense-file\rosbag\msgs;D:\Desktop\librealsense\third-party\realsense-file\boost;D:\Desktop\librealsense\third-party\realsense-file\lz4\lib;D:\Desktop\librealsense\include;D:\Desktop\librealsense\build\common\fw;D:\Desktop\librealsense\build\third-party\libusb\libusb;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>common\fw\MinSizeRel\fw.lib;third-party\realsense-file\MinSizeRel\realsense-file.lib;common\fw\fw.res;libusb_install\lib\usb.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>D:/Desktop/librealsense/build/MinSizeRel/realsense2.lib</ImportLibrary>
+      <ModuleDefinitionFile>D:/Desktop/librealsense/src/realsense.def</ModuleDefinitionFile>
+      <ProgramDataBaseFile>D:/Desktop/librealsense/build/MinSizeRel/realsense2.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>D:\Desktop\librealsense\build;D:\Desktop\librealsense\realsense2;D:\Desktop\librealsense\src;D:\Desktop\librealsense\third-party\realsense-file\rosbag\console_bridge\include;D:\Desktop\librealsense\third-party\realsense-file\rosbag\cpp_common\include;D:\Desktop\librealsense\third-party\realsense-file\rosbag\rosbag_storage\include;D:\Desktop\librealsense\third-party\realsense-file\rosbag\roscpp_serialization\include;D:\Desktop\librealsense\third-party\realsense-file\rosbag\rostime\include;D:\Desktop\librealsense\third-party\realsense-file\rosbag\roscpp_traits\include;D:\Desktop\librealsense\third-party\realsense-file\rosbag\roslz4\include;D:\Desktop\librealsense\third-party\realsense-file\rosbag\msgs;D:\Desktop\librealsense\third-party\realsense-file\boost;D:\Desktop\librealsense\third-party\realsense-file\lz4\lib;D:\Desktop\librealsense\include;D:\Desktop\librealsense\build\common\fw;D:\Desktop\librealsense\build\third-party\libusb\libusb;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /bigobj</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4819</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;WITH_TRACKING=1;_UNICODE;NOMINMAX;ELPP_THREAD_SAFE;ELPP_NO_DEFAULT_LOG_FILE;BUILD_EASYLOGGINGPP;HWM_OVER_XU;BUILD_SHARED_LIBS;RS2_USE_WMF_BACKEND;UNICODE;__SSSE3__;_CRT_SECURE_NO_WARNINGS;CMAKE_INTDIR="RelWithDebInfo";realsense2_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;WITH_TRACKING=1;_UNICODE;NOMINMAX;ELPP_THREAD_SAFE;ELPP_NO_DEFAULT_LOG_FILE;BUILD_EASYLOGGINGPP;HWM_OVER_XU;BUILD_SHARED_LIBS;RS2_USE_WMF_BACKEND;UNICODE;__SSSE3__;_CRT_SECURE_NO_WARNINGS;CMAKE_INTDIR=\"RelWithDebInfo\";realsense2_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\Desktop\librealsense\build;D:\Desktop\librealsense\realsense2;D:\Desktop\librealsense\src;D:\Desktop\librealsense\third-party\realsense-file\rosbag\console_bridge\include;D:\Desktop\librealsense\third-party\realsense-file\rosbag\cpp_common\include;D:\Desktop\librealsense\third-party\realsense-file\rosbag\rosbag_storage\include;D:\Desktop\librealsense\third-party\realsense-file\rosbag\roscpp_serialization\include;D:\Desktop\librealsense\third-party\realsense-file\rosbag\rostime\include;D:\Desktop\librealsense\third-party\realsense-file\rosbag\roscpp_traits\include;D:\Desktop\librealsense\third-party\realsense-file\rosbag\roslz4\include;D:\Desktop\librealsense\third-party\realsense-file\rosbag\msgs;D:\Desktop\librealsense\third-party\realsense-file\boost;D:\Desktop\librealsense\third-party\realsense-file\lz4\lib;D:\Desktop\librealsense\include;D:\Desktop\librealsense\build\common\fw;D:\Desktop\librealsense\build\third-party\libusb\libusb;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\Desktop\librealsense\build;D:\Desktop\librealsense\realsense2;D:\Desktop\librealsense\src;D:\Desktop\librealsense\third-party\realsense-file\rosbag\console_bridge\include;D:\Desktop\librealsense\third-party\realsense-file\rosbag\cpp_common\include;D:\Desktop\librealsense\third-party\realsense-file\rosbag\rosbag_storage\include;D:\Desktop\librealsense\third-party\realsense-file\rosbag\roscpp_serialization\include;D:\Desktop\librealsense\third-party\realsense-file\rosbag\rostime\include;D:\Desktop\librealsense\third-party\realsense-file\rosbag\roscpp_traits\include;D:\Desktop\librealsense\third-party\realsense-file\rosbag\roslz4\include;D:\Desktop\librealsense\third-party\realsense-file\rosbag\msgs;D:\Desktop\librealsense\third-party\realsense-file\boost;D:\Desktop\librealsense\third-party\realsense-file\lz4\lib;D:\Desktop\librealsense\include;D:\Desktop\librealsense\build\common\fw;D:\Desktop\librealsense\build\third-party\libusb\libusb;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>common\fw\RelWithDebInfo\fw.lib;third-party\realsense-file\RelWithDebInfo\realsense-file.lib;common\fw\fw.res;libusb_install\lib\usb.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>D:/Desktop/librealsense/build/RelWithDebInfo/realsense2.lib</ImportLibrary>
+      <ModuleDefinitionFile>D:/Desktop/librealsense/src/realsense.def</ModuleDefinitionFile>
+      <ProgramDataBaseFile>D:/Desktop/librealsense/build/RelWithDebInfo/realsense2.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\Desktop\librealsense\CMakeLists.txt">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule D:/Desktop/librealsense/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SD:/Desktop/librealsense -BD:/Desktop/librealsense/build --check-stamp-file D:/Desktop/librealsense/build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Program Files\CMake\share\cmake-3.17\Modules\BasicConfigVersion-AnyNewerVersion.cmake.in;C:\Program Files\CMake\share\cmake-3.17\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\CMakeCheckCompilerFlagCommonPatterns.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\CMakePackageConfigHelpers.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\CheckCXXCompilerFlag.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\CheckCXXSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\ExternalProject.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\FindGit.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\GNUInstallDirs.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\Platform\WindowsPaths.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\RepositoryInfo.txt.in;C:\Program Files\CMake\share\cmake-3.17\Modules\WriteBasicConfigVersionFile.cmake;D:\Desktop\librealsense\CMake\connectivity_check.cmake;D:\Desktop\librealsense\CMake\embedd_udev_rules.cmake;D:\Desktop\librealsense\CMake\external_libusb.cmake;D:\Desktop\librealsense\CMake\global_config.cmake;D:\Desktop\librealsense\CMake\include_os.cmake;D:\Desktop\librealsense\CMake\install_config.cmake;D:\Desktop\librealsense\CMake\libusb_config.cmake;D:\Desktop\librealsense\CMake\lrs_macros.cmake;D:\Desktop\librealsense\CMake\lrs_options.cmake;D:\Desktop\librealsense\CMake\realsense2Config.cmake.in;D:\Desktop\librealsense\CMake\version_config.cmake;D:\Desktop\librealsense\CMake\windows_config.cmake;D:\Desktop\librealsense\build\CMakeFiles\3.17.5\CMakeCCompiler.cmake;D:\Desktop\librealsense\build\CMakeFiles\3.17.5\CMakeCXXCompiler.cmake;D:\Desktop\librealsense\build\CMakeFiles\3.17.5\CMakeRCCompiler.cmake;D:\Desktop\librealsense\build\CMakeFiles\3.17.5\CMakeSystem.cmake;D:\Desktop\librealsense\build\libusb-prefix\tmp\libusb-cfgcmd.txt.in;D:\Desktop\librealsense\cmake_uninstall.cmake;D:\Desktop\librealsense\config\librealsense.pc.in;D:\Desktop\librealsense\include\CMakeLists.txt;D:\Desktop\librealsense\src\CMakeLists.txt;D:\Desktop\librealsense\src\algo\CMakeLists.txt;D:\Desktop\librealsense\src\algo\depth-to-rgb-calibration\CMakeLists.txt;D:\Desktop\librealsense\src\core\CMakeLists.txt;D:\Desktop\librealsense\src\ds5\CMakeLists.txt;D:\Desktop\librealsense\src\fw-logs\CMakeLists.txt;D:\Desktop\librealsense\src\fw-update\CMakeLists.txt;D:\Desktop\librealsense\src\ivcam\CMakeLists.txt;D:\Desktop\librealsense\src\l500\CMakeLists.txt;D:\Desktop\librealsense\src\media\CMakeLists.txt;D:\Desktop\librealsense\src\mf\CMakeLists.txt;D:\Desktop\librealsense\src\mock\CMakeLists.txt;D:\Desktop\librealsense\src\pipeline\CMakeLists.txt;D:\Desktop\librealsense\src\proc\CMakeLists.txt;D:\Desktop\librealsense\src\proc\sse\CMakeLists.txt;D:\Desktop\librealsense\src\res\CMakeLists.txt;D:\Desktop\librealsense\src\tm2\CMakeLists.txt;D:\Desktop\librealsense\src\usb\CMakeLists.txt;D:\Desktop\librealsense\src\win\CMakeLists.txt;D:\Desktop\librealsense\src\winusb\CMakeLists.txt;D:\Desktop\librealsense\third-party\CMakeLists.txt;D:\Desktop\librealsense\third-party\easyloggingpp\CMakeLists.txt;D:\Desktop\librealsense\third-party\realsense-file\config.cmake;D:\Desktop\librealsense\third-party\realsense-file\rosbag\config.cmake;D:\Desktop\librealsense\third-party\realsense-file\rosbag\console_bridge\config.cmake;D:\Desktop\librealsense\third-party\realsense-file\rosbag\cpp_common\config.cmake;D:\Desktop\librealsense\third-party\realsense-file\rosbag\rosbag_storage\config.cmake;D:\Desktop\librealsense\third-party\realsense-file\rosbag\roscpp_serialization\config.cmake;D:\Desktop\librealsense\third-party\realsense-file\rosbag\roscpp_traits\config.cmake;D:\Desktop\librealsense\third-party\realsense-file\rosbag\roslz4\config.cmake;D:\Desktop\librealsense\third-party\realsense-file\rosbag\rostime\config.cmake;D:\Desktop\librealsense\third-party\sqlite\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\Desktop\librealsense\build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule D:/Desktop/librealsense/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SD:/Desktop/librealsense -BD:/Desktop/librealsense/build --check-stamp-file D:/Desktop/librealsense/build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Program Files\CMake\share\cmake-3.17\Modules\BasicConfigVersion-AnyNewerVersion.cmake.in;C:\Program Files\CMake\share\cmake-3.17\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\CMakeCheckCompilerFlagCommonPatterns.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\CMakePackageConfigHelpers.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\CheckCXXCompilerFlag.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\CheckCXXSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\ExternalProject.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\FindGit.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\GNUInstallDirs.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\Platform\WindowsPaths.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\RepositoryInfo.txt.in;C:\Program Files\CMake\share\cmake-3.17\Modules\WriteBasicConfigVersionFile.cmake;D:\Desktop\librealsense\CMake\connectivity_check.cmake;D:\Desktop\librealsense\CMake\embedd_udev_rules.cmake;D:\Desktop\librealsense\CMake\external_libusb.cmake;D:\Desktop\librealsense\CMake\global_config.cmake;D:\Desktop\librealsense\CMake\include_os.cmake;D:\Desktop\librealsense\CMake\install_config.cmake;D:\Desktop\librealsense\CMake\libusb_config.cmake;D:\Desktop\librealsense\CMake\lrs_macros.cmake;D:\Desktop\librealsense\CMake\lrs_options.cmake;D:\Desktop\librealsense\CMake\realsense2Config.cmake.in;D:\Desktop\librealsense\CMake\version_config.cmake;D:\Desktop\librealsense\CMake\windows_config.cmake;D:\Desktop\librealsense\build\CMakeFiles\3.17.5\CMakeCCompiler.cmake;D:\Desktop\librealsense\build\CMakeFiles\3.17.5\CMakeCXXCompiler.cmake;D:\Desktop\librealsense\build\CMakeFiles\3.17.5\CMakeRCCompiler.cmake;D:\Desktop\librealsense\build\CMakeFiles\3.17.5\CMakeSystem.cmake;D:\Desktop\librealsense\build\libusb-prefix\tmp\libusb-cfgcmd.txt.in;D:\Desktop\librealsense\cmake_uninstall.cmake;D:\Desktop\librealsense\config\librealsense.pc.in;D:\Desktop\librealsense\include\CMakeLists.txt;D:\Desktop\librealsense\src\CMakeLists.txt;D:\Desktop\librealsense\src\algo\CMakeLists.txt;D:\Desktop\librealsense\src\algo\depth-to-rgb-calibration\CMakeLists.txt;D:\Desktop\librealsense\src\core\CMakeLists.txt;D:\Desktop\librealsense\src\ds5\CMakeLists.txt;D:\Desktop\librealsense\src\fw-logs\CMakeLists.txt;D:\Desktop\librealsense\src\fw-update\CMakeLists.txt;D:\Desktop\librealsense\src\ivcam\CMakeLists.txt;D:\Desktop\librealsense\src\l500\CMakeLists.txt;D:\Desktop\librealsense\src\media\CMakeLists.txt;D:\Desktop\librealsense\src\mf\CMakeLists.txt;D:\Desktop\librealsense\src\mock\CMakeLists.txt;D:\Desktop\librealsense\src\pipeline\CMakeLists.txt;D:\Desktop\librealsense\src\proc\CMakeLists.txt;D:\Desktop\librealsense\src\proc\sse\CMakeLists.txt;D:\Desktop\librealsense\src\res\CMakeLists.txt;D:\Desktop\librealsense\src\tm2\CMakeLists.txt;D:\Desktop\librealsense\src\usb\CMakeLists.txt;D:\Desktop\librealsense\src\win\CMakeLists.txt;D:\Desktop\librealsense\src\winusb\CMakeLists.txt;D:\Desktop\librealsense\third-party\CMakeLists.txt;D:\Desktop\librealsense\third-party\easyloggingpp\CMakeLists.txt;D:\Desktop\librealsense\third-party\realsense-file\config.cmake;D:\Desktop\librealsense\third-party\realsense-file\rosbag\config.cmake;D:\Desktop\librealsense\third-party\realsense-file\rosbag\console_bridge\config.cmake;D:\Desktop\librealsense\third-party\realsense-file\rosbag\cpp_common\config.cmake;D:\Desktop\librealsense\third-party\realsense-file\rosbag\rosbag_storage\config.cmake;D:\Desktop\librealsense\third-party\realsense-file\rosbag\roscpp_serialization\config.cmake;D:\Desktop\librealsense\third-party\realsense-file\rosbag\roscpp_traits\config.cmake;D:\Desktop\librealsense\third-party\realsense-file\rosbag\roslz4\config.cmake;D:\Desktop\librealsense\third-party\realsense-file\rosbag\rostime\config.cmake;D:\Desktop\librealsense\third-party\sqlite\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\Desktop\librealsense\build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule D:/Desktop/librealsense/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SD:/Desktop/librealsense -BD:/Desktop/librealsense/build --check-stamp-file D:/Desktop/librealsense/build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Program Files\CMake\share\cmake-3.17\Modules\BasicConfigVersion-AnyNewerVersion.cmake.in;C:\Program Files\CMake\share\cmake-3.17\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\CMakeCheckCompilerFlagCommonPatterns.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\CMakePackageConfigHelpers.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\CheckCXXCompilerFlag.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\CheckCXXSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\ExternalProject.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\FindGit.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\GNUInstallDirs.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\Platform\WindowsPaths.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\RepositoryInfo.txt.in;C:\Program Files\CMake\share\cmake-3.17\Modules\WriteBasicConfigVersionFile.cmake;D:\Desktop\librealsense\CMake\connectivity_check.cmake;D:\Desktop\librealsense\CMake\embedd_udev_rules.cmake;D:\Desktop\librealsense\CMake\external_libusb.cmake;D:\Desktop\librealsense\CMake\global_config.cmake;D:\Desktop\librealsense\CMake\include_os.cmake;D:\Desktop\librealsense\CMake\install_config.cmake;D:\Desktop\librealsense\CMake\libusb_config.cmake;D:\Desktop\librealsense\CMake\lrs_macros.cmake;D:\Desktop\librealsense\CMake\lrs_options.cmake;D:\Desktop\librealsense\CMake\realsense2Config.cmake.in;D:\Desktop\librealsense\CMake\version_config.cmake;D:\Desktop\librealsense\CMake\windows_config.cmake;D:\Desktop\librealsense\build\CMakeFiles\3.17.5\CMakeCCompiler.cmake;D:\Desktop\librealsense\build\CMakeFiles\3.17.5\CMakeCXXCompiler.cmake;D:\Desktop\librealsense\build\CMakeFiles\3.17.5\CMakeRCCompiler.cmake;D:\Desktop\librealsense\build\CMakeFiles\3.17.5\CMakeSystem.cmake;D:\Desktop\librealsense\build\libusb-prefix\tmp\libusb-cfgcmd.txt.in;D:\Desktop\librealsense\cmake_uninstall.cmake;D:\Desktop\librealsense\config\librealsense.pc.in;D:\Desktop\librealsense\include\CMakeLists.txt;D:\Desktop\librealsense\src\CMakeLists.txt;D:\Desktop\librealsense\src\algo\CMakeLists.txt;D:\Desktop\librealsense\src\algo\depth-to-rgb-calibration\CMakeLists.txt;D:\Desktop\librealsense\src\core\CMakeLists.txt;D:\Desktop\librealsense\src\ds5\CMakeLists.txt;D:\Desktop\librealsense\src\fw-logs\CMakeLists.txt;D:\Desktop\librealsense\src\fw-update\CMakeLists.txt;D:\Desktop\librealsense\src\ivcam\CMakeLists.txt;D:\Desktop\librealsense\src\l500\CMakeLists.txt;D:\Desktop\librealsense\src\media\CMakeLists.txt;D:\Desktop\librealsense\src\mf\CMakeLists.txt;D:\Desktop\librealsense\src\mock\CMakeLists.txt;D:\Desktop\librealsense\src\pipeline\CMakeLists.txt;D:\Desktop\librealsense\src\proc\CMakeLists.txt;D:\Desktop\librealsense\src\proc\sse\CMakeLists.txt;D:\Desktop\librealsense\src\res\CMakeLists.txt;D:\Desktop\librealsense\src\tm2\CMakeLists.txt;D:\Desktop\librealsense\src\usb\CMakeLists.txt;D:\Desktop\librealsense\src\win\CMakeLists.txt;D:\Desktop\librealsense\src\winusb\CMakeLists.txt;D:\Desktop\librealsense\third-party\CMakeLists.txt;D:\Desktop\librealsense\third-party\easyloggingpp\CMakeLists.txt;D:\Desktop\librealsense\third-party\realsense-file\config.cmake;D:\Desktop\librealsense\third-party\realsense-file\rosbag\config.cmake;D:\Desktop\librealsense\third-party\realsense-file\rosbag\console_bridge\config.cmake;D:\Desktop\librealsense\third-party\realsense-file\rosbag\cpp_common\config.cmake;D:\Desktop\librealsense\third-party\realsense-file\rosbag\rosbag_storage\config.cmake;D:\Desktop\librealsense\third-party\realsense-file\rosbag\roscpp_serialization\config.cmake;D:\Desktop\librealsense\third-party\realsense-file\rosbag\roscpp_traits\config.cmake;D:\Desktop\librealsense\third-party\realsense-file\rosbag\roslz4\config.cmake;D:\Desktop\librealsense\third-party\realsense-file\rosbag\rostime\config.cmake;D:\Desktop\librealsense\third-party\sqlite\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\Desktop\librealsense\build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule D:/Desktop/librealsense/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SD:/Desktop/librealsense -BD:/Desktop/librealsense/build --check-stamp-file D:/Desktop/librealsense/build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Program Files\CMake\share\cmake-3.17\Modules\BasicConfigVersion-AnyNewerVersion.cmake.in;C:\Program Files\CMake\share\cmake-3.17\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\CMakeCheckCompilerFlagCommonPatterns.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\CMakePackageConfigHelpers.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\CheckCXXCompilerFlag.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\CheckCXXSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\ExternalProject.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\FindGit.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\GNUInstallDirs.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\Platform\WindowsPaths.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\RepositoryInfo.txt.in;C:\Program Files\CMake\share\cmake-3.17\Modules\WriteBasicConfigVersionFile.cmake;D:\Desktop\librealsense\CMake\connectivity_check.cmake;D:\Desktop\librealsense\CMake\embedd_udev_rules.cmake;D:\Desktop\librealsense\CMake\external_libusb.cmake;D:\Desktop\librealsense\CMake\global_config.cmake;D:\Desktop\librealsense\CMake\include_os.cmake;D:\Desktop\librealsense\CMake\install_config.cmake;D:\Desktop\librealsense\CMake\libusb_config.cmake;D:\Desktop\librealsense\CMake\lrs_macros.cmake;D:\Desktop\librealsense\CMake\lrs_options.cmake;D:\Desktop\librealsense\CMake\realsense2Config.cmake.in;D:\Desktop\librealsense\CMake\version_config.cmake;D:\Desktop\librealsense\CMake\windows_config.cmake;D:\Desktop\librealsense\build\CMakeFiles\3.17.5\CMakeCCompiler.cmake;D:\Desktop\librealsense\build\CMakeFiles\3.17.5\CMakeCXXCompiler.cmake;D:\Desktop\librealsense\build\CMakeFiles\3.17.5\CMakeRCCompiler.cmake;D:\Desktop\librealsense\build\CMakeFiles\3.17.5\CMakeSystem.cmake;D:\Desktop\librealsense\build\libusb-prefix\tmp\libusb-cfgcmd.txt.in;D:\Desktop\librealsense\cmake_uninstall.cmake;D:\Desktop\librealsense\config\librealsense.pc.in;D:\Desktop\librealsense\include\CMakeLists.txt;D:\Desktop\librealsense\src\CMakeLists.txt;D:\Desktop\librealsense\src\algo\CMakeLists.txt;D:\Desktop\librealsense\src\algo\depth-to-rgb-calibration\CMakeLists.txt;D:\Desktop\librealsense\src\core\CMakeLists.txt;D:\Desktop\librealsense\src\ds5\CMakeLists.txt;D:\Desktop\librealsense\src\fw-logs\CMakeLists.txt;D:\Desktop\librealsense\src\fw-update\CMakeLists.txt;D:\Desktop\librealsense\src\ivcam\CMakeLists.txt;D:\Desktop\librealsense\src\l500\CMakeLists.txt;D:\Desktop\librealsense\src\media\CMakeLists.txt;D:\Desktop\librealsense\src\mf\CMakeLists.txt;D:\Desktop\librealsense\src\mock\CMakeLists.txt;D:\Desktop\librealsense\src\pipeline\CMakeLists.txt;D:\Desktop\librealsense\src\proc\CMakeLists.txt;D:\Desktop\librealsense\src\proc\sse\CMakeLists.txt;D:\Desktop\librealsense\src\res\CMakeLists.txt;D:\Desktop\librealsense\src\tm2\CMakeLists.txt;D:\Desktop\librealsense\src\usb\CMakeLists.txt;D:\Desktop\librealsense\src\win\CMakeLists.txt;D:\Desktop\librealsense\src\winusb\CMakeLists.txt;D:\Desktop\librealsense\third-party\CMakeLists.txt;D:\Desktop\librealsense\third-party\easyloggingpp\CMakeLists.txt;D:\Desktop\librealsense\third-party\realsense-file\config.cmake;D:\Desktop\librealsense\third-party\realsense-file\rosbag\config.cmake;D:\Desktop\librealsense\third-party\realsense-file\rosbag\console_bridge\config.cmake;D:\Desktop\librealsense\third-party\realsense-file\rosbag\cpp_common\config.cmake;D:\Desktop\librealsense\third-party\realsense-file\rosbag\rosbag_storage\config.cmake;D:\Desktop\librealsense\third-party\realsense-file\rosbag\roscpp_serialization\config.cmake;D:\Desktop\librealsense\third-party\realsense-file\rosbag\roscpp_traits\config.cmake;D:\Desktop\librealsense\third-party\realsense-file\rosbag\roslz4\config.cmake;D:\Desktop\librealsense\third-party\realsense-file\rosbag\rostime\config.cmake;D:\Desktop\librealsense\third-party\sqlite\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\Desktop\librealsense\build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="D:\Desktop\librealsense\include\librealsense2\rs.hpp" />
+    <ClInclude Include="D:\Desktop\librealsense\include\librealsense2\rs.h" />
+    <ClInclude Include="D:\Desktop\librealsense\include\librealsense2\h\rs_types.h" />
+    <ClInclude Include="D:\Desktop\librealsense\include\librealsense2\h\rs_context.h" />
+    <ClInclude Include="D:\Desktop\librealsense\include\librealsense2\h\rs_device.h" />
+    <ClInclude Include="D:\Desktop\librealsense\include\librealsense2\h\rs_frame.h" />
+    <ClInclude Include="D:\Desktop\librealsense\include\librealsense2\h\rs_option.h" />
+    <ClInclude Include="D:\Desktop\librealsense\include\librealsense2\h\rs_processing.h" />
+    <ClInclude Include="D:\Desktop\librealsense\include\librealsense2\h\rs_record_playback.h" />
+    <ClInclude Include="D:\Desktop\librealsense\include\librealsense2\h\rs_sensor.h" />
+    <ClInclude Include="D:\Desktop\librealsense\include\librealsense2\h\rs_internal.h" />
+    <ClInclude Include="D:\Desktop\librealsense\include\librealsense2\h\rs_pipeline.h" />
+    <ClInclude Include="D:\Desktop\librealsense\include\librealsense2\h\rs_config.h" />
+    <ClInclude Include="D:\Desktop\librealsense\include\librealsense2\hpp\rs_types.hpp" />
+    <ClInclude Include="D:\Desktop\librealsense\include\librealsense2\hpp\rs_context.hpp" />
+    <ClInclude Include="D:\Desktop\librealsense\include\librealsense2\hpp\rs_device.hpp" />
+    <ClInclude Include="D:\Desktop\librealsense\include\librealsense2\hpp\rs_serializable_device.hpp" />
+    <ClInclude Include="D:\Desktop\librealsense\include\librealsense2\hpp\rs_export.hpp" />
+    <ClInclude Include="D:\Desktop\librealsense\include\librealsense2\hpp\rs_frame.hpp" />
+    <ClInclude Include="D:\Desktop\librealsense\include\librealsense2\hpp\rs_processing.hpp" />
+    <ClInclude Include="D:\Desktop\librealsense\include\librealsense2\hpp\rs_record_playback.hpp" />
+    <ClInclude Include="D:\Desktop\librealsense\include\librealsense2\hpp\rs_sensor.hpp" />
+    <ClInclude Include="D:\Desktop\librealsense\include\librealsense2\hpp\rs_options.hpp" />
+    <ClInclude Include="D:\Desktop\librealsense\include\librealsense2\hpp\rs_internal.hpp" />
+    <ClInclude Include="D:\Desktop\librealsense\include\librealsense2\hpp\rs_pipeline.hpp" />
+    <ClInclude Include="D:\Desktop\librealsense\include\librealsense2\rsutil.h" />
+    <ClInclude Include="D:\Desktop\librealsense\include\librealsense2\rs_advanced_mode.h" />
+    <ClInclude Include="D:\Desktop\librealsense\include\librealsense2\rs_advanced_mode.hpp" />
+    <ClInclude Include="D:\Desktop\librealsense\include\librealsense2\h\rs_advanced_mode_command.h" />
+    <ClInclude Include="D:\Desktop\librealsense\src\algo\depth-to-rgb-calibration\calibration-types.h" />
+    <ClCompile Include="D:\Desktop\librealsense\src\algo\depth-to-rgb-calibration\calibration.cpp" />
+    <ClInclude Include="D:\Desktop\librealsense\src\algo\depth-to-rgb-calibration\calibration.h" />
+    <ClCompile Include="D:\Desktop\librealsense\src\algo\depth-to-rgb-calibration\coeffs.cpp" />
+    <ClInclude Include="D:\Desktop\librealsense\src\algo\depth-to-rgb-calibration\coeffs.h" />
+    <ClCompile Include="D:\Desktop\librealsense\src\algo\depth-to-rgb-calibration\cost.cpp" />
+    <ClInclude Include="D:\Desktop\librealsense\src\algo\depth-to-rgb-calibration\cost.h" />
+    <ClInclude Include="D:\Desktop\librealsense\src\algo\depth-to-rgb-calibration\debug.h" />
+    <ClInclude Include="D:\Desktop\librealsense\src\algo\depth-to-rgb-calibration\frame-data.h" />
+    <ClCompile Include="D:\Desktop\librealsense\src\algo\depth-to-rgb-calibration\uvmap.cpp" />
+    <ClInclude Include="D:\Desktop\librealsense\src\algo\depth-to-rgb-calibration\uvmap.h" />
+    <ClCompile Include="D:\Desktop\librealsense\src\algo\depth-to-rgb-calibration\optimizer.cpp" />
+    <ClInclude Include="D:\Desktop\librealsense\src\algo\depth-to-rgb-calibration\optimizer.h" />
+    <ClCompile Include="D:\Desktop\librealsense\src\algo\depth-to-rgb-calibration\k-to-dsm.cpp" />
+    <ClInclude Include="D:\Desktop\librealsense\src\algo\depth-to-rgb-calibration\k-to-dsm.h" />
+    <ClCompile Include="D:\Desktop\librealsense\src\algo\depth-to-rgb-calibration\svd_3x4.cpp" />
+    <ClCompile Include="D:\Desktop\librealsense\src\algo\depth-to-rgb-calibration\pinv_3x3.cpp" />
+    <ClCompile Include="D:\Desktop\librealsense\src\algo\depth-to-rgb-calibration\utils.cpp" />
+    <ClInclude Include="D:\Desktop\librealsense\src\algo\depth-to-rgb-calibration\utils.h" />
+    <ClCompile Include="D:\Desktop\librealsense\src\algo\depth-to-rgb-calibration\rotation-in-angles.cpp" />
+    <ClCompile Include="D:\Desktop\librealsense\src\algo\depth-to-rgb-calibration\valid-scene.cpp" />
+    <ClCompile Include="D:\Desktop\librealsense\src\algo\depth-to-rgb-calibration\valid-results.cpp" />
+    <ClInclude Include="D:\Desktop\librealsense\src\core\streaming.h" />
+    <ClInclude Include="D:\Desktop\librealsense\src\core\debug.h" />
+    <ClInclude Include="D:\Desktop\librealsense\src\core\advanced_mode.h" />
+    <ClInclude Include="D:\Desktop\librealsense\src\core\roi.h" />
+    <ClInclude Include="D:\Desktop\librealsense\src\core\motion.h" />
+    <ClInclude Include="D:\Desktop\librealsense\src\core\video.h" />
+    <ClInclude Include="D:\Desktop\librealsense\src\core\options.h" />
+    <ClInclude Include="D:\Desktop\librealsense\src\core\info.h" />
+    <ClInclude Include="D:\Desktop\librealsense\src\core\extension.h" />
+    <ClInclude Include="D:\Desktop\librealsense\src\core\processing.h" />
+    <ClInclude Include="D:\Desktop\librealsense\src\core\serialization.h" />
+    <ClCompile Include="D:\Desktop\librealsense\src\ds5\ds5-options.cpp" />
+    <ClCompile Include="D:\Desktop\librealsense\src\ds5\ds5-timestamp.cpp" />
+    <ClCompile Include="D:\Desktop\librealsense\src\ds5\ds5-private.cpp" />
+    <ClCompile Include="D:\Desktop\librealsense\src\ds5\ds5-motion.cpp" />
+    <ClCompile Include="D:\Desktop\librealsense\src\ds5\ds5-nonmonochrome.cpp" />
+    <ClCompile Include="D:\Desktop\librealsense\src\ds5\ds5-device.cpp" />
+    <ClCompile Include="D:\Desktop\librealsense\src\ds5\ds5-color.cpp" />
+    <ClCompile Include="D:\Desktop\librealsense\src\ds5\ds5-active.cpp" />
+    <ClCompile Include="D:\Desktop\librealsense\src\ds5\ds5-factory.cpp" />
+    <ClCompile Include="D:\Desktop\librealsense\src\ds5\ds5-fw-update-device.cpp" />
+    <ClCompile Include="D:\Desktop\librealsense\src\ds5\advanced_mode\rs_advanced_mode.cpp" />
+    <ClCompile Include="D:\Desktop\librealsense\src\ds5\advanced_mode\presets.cpp" />
+    <ClCompile Include="D:\Desktop\librealsense\src\ds5\advanced_mode\advanced_mode.cpp" />
+    <ClCompile Include="D:\Desktop\librealsense\src\ds5\ds5-auto-calibration.cpp" />
+    <ClInclude Include="D:\Desktop\librealsense\src\ds5\ds5-factory.h" />
+    <ClInclude Include="D:\Desktop\librealsense\src\ds5\ds5-device.h" />
+    <ClInclude Include="D:\Desktop\librealsense\src\ds5\ds5-options.h" />
+    <ClInclude Include="D:\Desktop\librealsense\src\ds5\ds5-private.h" />
+    <ClInclude Include="D:\Desktop\librealsense\src\ds5\ds5-timestamp.h" />
+    <ClInclude Include="D:\Desktop\librealsense\src\ds5\ds5-active.h" />
+    <ClInclude Include="D:\Desktop\librealsense\src\ds5\ds5-motion.h" />
+    <ClInclude Include="D:\Desktop\librealsense\src\ds5\ds5-nonmonochrome.h" />
+    <ClInclude Include="D:\Desktop\librealsense\src\ds5\ds5-color.h" />
+    <ClInclude Include="D:\Desktop\librealsense\src\ds5\ds5-fw-update-device.h" />
+    <ClInclude Include="D:\Desktop\librealsense\src\ds5\advanced_mode\json_loader.hpp" />
+    <ClInclude Include="D:\Desktop\librealsense\src\ds5\advanced_mode\presets.h" />
+    <ClInclude Include="D:\Desktop\librealsense\src\ds5\ds5-auto-calibration.h" />
+    <ClCompile Include="D:\Desktop\librealsense\src\ivcam\ivcam-private.cpp" />
+    <ClCompile Include="D:\Desktop\librealsense\src\ivcam\sr300.cpp" />
+    <ClCompile Include="D:\Desktop\librealsense\src\ivcam\sr300-fw-update-device.cpp" />
+    <ClInclude Include="D:\Desktop\librealsense\src\ivcam\ivcam-private.h" />
+    <ClInclude Include="D:\Desktop\librealsense\src\ivcam\sr300.h" />
+    <ClInclude Include="D:\Desktop\librealsense\src\ivcam\sr300-fw-update-device.h" />
+    <ClCompile Include="D:\Desktop\librealsense\src\l500\l500-depth.cpp" />
+    <ClCompile Include="D:\Desktop\librealsense\src\l500\l500-private.cpp" />
+    <ClCompile Include="D:\Desktop\librealsense\src\l500\l500-color.cpp" />
+    <ClCompile Include="D:\Desktop\librealsense\src\l500\l500-device.cpp" />
+    <ClCompile Include="D:\Desktop\librealsense\src\l500\l500-motion.cpp" />
+    <ClCompile Include="D:\Desktop\librealsense\src\l500\l500-factory.cpp" />
+    <ClCompile Include="D:\Desktop\librealsense\src\l500\l500-fw-update-device.cpp" />
+    <ClCompile Include="D:\Desktop\librealsense\src\l500\l500-serializable.cpp" />
+    <ClCompile Include="D:\Desktop\librealsense\src\l500\l500-options.cpp" />
+    <ClInclude Include="D:\Desktop\librealsense\src\l500\l500-depth.h" />
+    <ClInclude Include="D:\Desktop\librealsense\src\l500\l500-private.h" />
+    <ClInclude Include="D:\Desktop\librealsense\src\l500\l500-color.h" />
+    <ClInclude Include="D:\Desktop\librealsense\src\l500\l500-device.h" />
+    <ClInclude Include="D:\Desktop\librealsense\src\l500\l500-motion.h" />
+    <ClInclude Include="D:\Desktop\librealsense\src\l500\l500-factory.h" />
+    <ClInclude Include="D:\Desktop\librealsense\src\l500\l500-fw-update-device.h" />
+    <ClInclude Include="D:\Desktop\librealsense\src\l500\l500-serializable.h" />
+    <ClInclude Include="D:\Desktop\librealsense\src\l500\l500-options.h" />
+    <ClInclude Include="D:\Desktop\librealsense\src\l500\ac-trigger.h" />
+    <ClCompile Include="D:\Desktop\librealsense\src\l500\ac-trigger.cpp" />
+    <ClCompile Include="D:\Desktop\librealsense\src\media\record\record_device.cpp" />
+    <ClCompile Include="D:\Desktop\librealsense\src\media\record\record_sensor.cpp" />
+    <ClCompile Include="D:\Desktop\librealsense\src\media\playback\playback_device.cpp" />
+    <ClCompile Include="D:\Desktop\librealsense\src\media\playback\playback_sensor.cpp" />
+    <ClInclude Include="D:\Desktop\librealsense\src\media\record\record_device.h" />
+    <ClInclude Include="D:\Desktop\librealsense\src\media\record\record_sensor.h" />
+    <ClInclude Include="D:\Desktop\librealsense\src\media\playback\playback_device.h" />
+    <ClInclude Include="D:\Desktop\librealsense\src\media\playback\playback_sensor.h" />
+    <ClInclude Include="D:\Desktop\librealsense\src\media\ros\ros_reader.h" />
+    <ClInclude Include="D:\Desktop\librealsense\src\media\ros\ros_writer.h" />
+    <ClCompile Include="D:\Desktop\librealsense\src\media\ros\ros_reader.cpp" />
+    <ClCompile Include="D:\Desktop\librealsense\src\media\ros\ros_writer.cpp" />
+    <ClInclude Include="D:\Desktop\librealsense\src\media\ros\ros_file_format.h" />
+    <ClCompile Include="D:\Desktop\librealsense\src\mock\sql.cpp" />
+    <ClCompile Include="D:\Desktop\librealsense\src\mock\recorder.cpp" />
+    <ClInclude Include="D:\Desktop\librealsense\src\mock\sql.h" />
+    <ClInclude Include="D:\Desktop\librealsense\src\mock\recorder.h" />
+    <ClCompile Include="D:\Desktop\librealsense\src\proc\sse\sse-align.cpp" />
+    <ClInclude Include="D:\Desktop\librealsense\src\proc\sse\sse-align.h" />
+    <ClCompile Include="D:\Desktop\librealsense\src\proc\sse\sse-pointcloud.cpp" />
+    <ClInclude Include="D:\Desktop\librealsense\src\proc\sse\sse-pointcloud.h" />
+    <ClCompile Include="D:\Desktop\librealsense\src\proc\processing-blocks-factory.cpp" />
+    <ClCompile Include="D:\Desktop\librealsense\src\proc\align.cpp" />
+    <ClCompile Include="D:\Desktop\librealsense\src\proc\colorizer.cpp" />
+    <ClCompile Include="D:\Desktop\librealsense\src\proc\pointcloud.cpp" />
+    <ClCompile Include="D:\Desktop\librealsense\src\proc\occlusion-filter.cpp" />
+    <ClCompile Include="D:\Desktop\librealsense\src\proc\synthetic-stream.cpp" />
+    <ClCompile Include="D:\Desktop\librealsense\src\proc\syncer-processing-block.cpp" />
+    <ClCompile Include="D:\Desktop\librealsense\src\proc\decimation-filter.cpp" />
+    <ClCompile Include="D:\Desktop\librealsense\src\proc\spatial-filter.cpp" />
+    <ClCompile Include="D:\Desktop\librealsense\src\proc\temporal-filter.cpp" />
+    <ClCompile Include="D:\Desktop\librealsense\src\proc\hdr-merge.cpp" />
+    <ClCompile Include="D:\Desktop\librealsense\src\proc\sequence_id_filter.cpp" />
+    <ClCompile Include="D:\Desktop\librealsense\src\proc\hole-filling-filter.cpp" />
+    <ClCompile Include="D:\Desktop\librealsense\src\proc\disparity-transform.cpp" />
+    <ClCompile Include="D:\Desktop\librealsense\src\proc\y8i-to-y8y8.cpp" />
+    <ClCompile Include="D:\Desktop\librealsense\src\proc\y12i-to-y16y16.cpp" />
+    <ClCompile Include="D:\Desktop\librealsense\src\proc\identity-processing-block.cpp" />
+    <ClCompile Include="D:\Desktop\librealsense\src\proc\threshold.cpp" />
+    <ClCompile Include="D:\Desktop\librealsense\src\proc\rates-printer.cpp" />
+    <ClCompile Include="D:\Desktop\librealsense\src\proc\zero-order.cpp" />
+    <ClCompile Include="D:\Desktop\librealsense\src\proc\units-transform.cpp" />
+    <ClCompile Include="D:\Desktop\librealsense\src\proc\rotation-transform.cpp" />
+    <ClCompile Include="D:\Desktop\librealsense\src\proc\color-formats-converter.cpp" />
+    <ClCompile Include="D:\Desktop\librealsense\src\proc\depth-formats-converter.cpp" />
+    <ClCompile Include="D:\Desktop\librealsense\src\proc\motion-transform.cpp" />
+    <ClCompile Include="D:\Desktop\librealsense\src\proc\auto-exposure-processor.cpp" />
+    <ClCompile Include="D:\Desktop\librealsense\src\proc\depth-decompress.cpp" />
+    <ClInclude Include="D:\Desktop\librealsense\src\proc\processing-blocks-factory.h" />
+    <ClInclude Include="D:\Desktop\librealsense\src\proc\align.h" />
+    <ClInclude Include="D:\Desktop\librealsense\src\proc\colorizer.h" />
+    <ClInclude Include="D:\Desktop\librealsense\src\proc\pointcloud.h" />
+    <ClInclude Include="D:\Desktop\librealsense\src\proc\occlusion-filter.h" />
+    <ClInclude Include="D:\Desktop\librealsense\src\proc\synthetic-stream.h" />
+    <ClInclude Include="D:\Desktop\librealsense\src\proc\decimation-filter.h" />
+    <ClInclude Include="D:\Desktop\librealsense\src\proc\spatial-filter.h" />
+    <ClInclude Include="D:\Desktop\librealsense\src\proc\temporal-filter.h" />
+    <ClInclude Include="D:\Desktop\librealsense\src\proc\hdr-merge.h" />
+    <ClInclude Include="D:\Desktop\librealsense\src\proc\sequence_id_filter.h" />
+    <ClInclude Include="D:\Desktop\librealsense\src\proc\hole-filling-filter.h" />
+    <ClInclude Include="D:\Desktop\librealsense\src\proc\syncer-processing-block.h" />
+    <ClInclude Include="D:\Desktop\librealsense\src\proc\disparity-transform.h" />
+    <ClInclude Include="D:\Desktop\librealsense\src\proc\y8i-to-y8y8.h" />
+    <ClInclude Include="D:\Desktop\librealsense\src\proc\y12i-to-y16y16.h" />
+    <ClInclude Include="D:\Desktop\librealsense\src\proc\identity-processing-block.h" />
+    <ClInclude Include="D:\Desktop\librealsense\src\proc\threshold.h" />
+    <ClInclude Include="D:\Desktop\librealsense\src\proc\rates-printer.h" />
+    <ClInclude Include="D:\Desktop\librealsense\src\proc\zero-order.h" />
+    <ClInclude Include="D:\Desktop\librealsense\src\proc\units-transform.h" />
+    <ClInclude Include="D:\Desktop\librealsense\src\proc\rotation-transform.h" />
+    <ClInclude Include="D:\Desktop\librealsense\src\proc\color-formats-converter.h" />
+    <ClInclude Include="D:\Desktop\librealsense\src\proc\depth-formats-converter.h" />
+    <ClInclude Include="D:\Desktop\librealsense\src\proc\motion-transform.h" />
+    <ClInclude Include="D:\Desktop\librealsense\src\proc\auto-exposure-processor.h" />
+    <ClInclude Include="D:\Desktop\librealsense\src\proc\depth-decompress.h" />
+    <ClInclude Include="D:\Desktop\librealsense\src\res\resource.h" />
+    <ClCompile Include="D:\Desktop\librealsense\src\pipeline\pipeline.cpp" />
+    <ClCompile Include="D:\Desktop\librealsense\src\pipeline\config.cpp" />
+    <ClCompile Include="D:\Desktop\librealsense\src\pipeline\profile.cpp" />
+    <ClCompile Include="D:\Desktop\librealsense\src\pipeline\aggregator.cpp" />
+    <ClInclude Include="D:\Desktop\librealsense\src\pipeline\pipeline.h" />
+    <ClInclude Include="D:\Desktop\librealsense\src\pipeline\config.h" />
+    <ClInclude Include="D:\Desktop\librealsense\src\pipeline\profile.h" />
+    <ClInclude Include="D:\Desktop\librealsense\src\pipeline\resolver.h" />
+    <ClInclude Include="D:\Desktop\librealsense\src\pipeline\aggregator.h" />
+    <ClInclude Include="D:\Desktop\librealsense\src\usb\usb-endpoint.h" />
+    <ClInclude Include="D:\Desktop\librealsense\src\usb\usb-interface.h" />
+    <ClInclude Include="D:\Desktop\librealsense\src\usb\usb-messenger.h" />
+    <ClInclude Include="D:\Desktop\librealsense\src\usb\usb-types.h" />
+    <ClInclude Include="D:\Desktop\librealsense\src\usb\usb-device.h" />
+    <ClInclude Include="D:\Desktop\librealsense\src\usb\usb-enumerator.h" />
+    <ClInclude Include="D:\Desktop\librealsense\src\usb\usb-request.h" />
+    <ClCompile Include="D:\Desktop\librealsense\src\fw-logs\fw-log-data.cpp" />
+    <ClInclude Include="D:\Desktop\librealsense\src\fw-logs\fw-log-data.h" />
+    <ClCompile Include="D:\Desktop\librealsense\src\fw-logs\fw-logs-formating-options.cpp" />
+    <ClInclude Include="D:\Desktop\librealsense\src\fw-logs\fw-logs-formating-options.h" />
+    <ClCompile Include="D:\Desktop\librealsense\src\fw-logs\fw-logs-parser.cpp" />
+    <ClInclude Include="D:\Desktop\librealsense\src\fw-logs\fw-logs-parser.h" />
+    <ClCompile Include="D:\Desktop\librealsense\src\fw-logs\fw-logs-xml-helper.cpp" />
+    <ClInclude Include="D:\Desktop\librealsense\src\fw-logs\fw-logs-xml-helper.h" />
+    <ClCompile Include="D:\Desktop\librealsense\src\fw-logs\fw-string-formatter.cpp" />
+    <ClInclude Include="D:\Desktop\librealsense\src\fw-logs\fw-string-formatter.h" />
+    <ClInclude Include="D:\Desktop\librealsense\src\fw-update\fw-update-device-interface.h" />
+    <ClInclude Include="D:\Desktop\librealsense\src\fw-update\fw-update-device.h" />
+    <ClCompile Include="D:\Desktop\librealsense\src\fw-update\fw-update-device.cpp" />
+    <ClInclude Include="D:\Desktop\librealsense\src\fw-update\fw-update-factory.h" />
+    <ClCompile Include="D:\Desktop\librealsense\src\fw-update\fw-update-factory.cpp" />
+    <ClInclude Include="D:\Desktop\librealsense\src\fw-update\fw-update-unsigned.h" />
+    <ClCompile Include="D:\Desktop\librealsense\src\fw-update\fw-update-unsigned.cpp" />
+    <ClCompile Include="D:\Desktop\librealsense\src\win\win-helpers.cpp" />
+    <ClInclude Include="D:\Desktop\librealsense\src\win\win-helpers.h" />
+    <ClInclude Include="D:\Desktop\librealsense\src\winusb\handle-winusb.h" />
+    <ClInclude Include="D:\Desktop\librealsense\src\winusb\endpoint-winusb.h" />
+    <ClInclude Include="D:\Desktop\librealsense\src\winusb\interface-winusb.h" />
+    <ClCompile Include="D:\Desktop\librealsense\src\winusb\interface-winusb.cpp" />
+    <ClInclude Include="D:\Desktop\librealsense\src\winusb\device-winusb.h" />
+    <ClCompile Include="D:\Desktop\librealsense\src\winusb\device-winusb.cpp" />
+    <ClCompile Include="D:\Desktop\librealsense\src\winusb\enumerator-winusb.cpp" />
+    <ClInclude Include="D:\Desktop\librealsense\src\winusb\messenger-winusb.h" />
+    <ClCompile Include="D:\Desktop\librealsense\src\winusb\messenger-winusb.cpp" />
+    <ClInclude Include="D:\Desktop\librealsense\src\winusb\request-winusb.h" />
+    <ClCompile Include="D:\Desktop\librealsense\src\winusb\request-winusb.cpp" />
+    <ClCompile Include="D:\Desktop\librealsense\src\mf\mf-uvc.cpp" />
+    <ClCompile Include="D:\Desktop\librealsense\src\mf\mf-hid.cpp" />
+    <ClCompile Include="D:\Desktop\librealsense\src\mf\mf-backend.cpp" />
+    <ClInclude Include="D:\Desktop\librealsense\src\mf\mf-uvc.h" />
+    <ClInclude Include="D:\Desktop\librealsense\src\mf\mf-hid.h" />
+    <ClInclude Include="D:\Desktop\librealsense\src\mf\mf-backend.h" />
+    <ClInclude Include="D:\Desktop\librealsense\src\tm2\tm-boot.h" />
+    <ClInclude Include="D:\Desktop\librealsense\src\tm2\tm-device.h" />
+    <ClInclude Include="D:\Desktop\librealsense\src\tm2\tm-info.h" />
+    <ClCompile Include="D:\Desktop\librealsense\src\tm2\tm-device.cpp" />
+    <ClCompile Include="D:\Desktop\librealsense\src\tm2\tm-info.cpp" />
+    <ClInclude Include="D:\Desktop\librealsense\src\tm2\t265-messages.h" />
+    <None Include="D:\Desktop\librealsense\src\realsense.def" />
+    <ClCompile Include="D:\Desktop\librealsense\src\algo.cpp" />
+    <ClCompile Include="D:\Desktop\librealsense\src\archive.cpp" />
+    <ClCompile Include="D:\Desktop\librealsense\src\backend.cpp" />
+    <ClCompile Include="D:\Desktop\librealsense\src\context.cpp" />
+    <ClCompile Include="D:\Desktop\librealsense\src\device.cpp" />
+    <ClCompile Include="D:\Desktop\librealsense\src\device_hub.cpp" />
+    <ClCompile Include="D:\Desktop\librealsense\src\environment.cpp" />
+    <ClCompile Include="D:\Desktop\librealsense\src\error-handling.cpp" />
+    <ClCompile Include="D:\Desktop\librealsense\src\firmware_logger_device.cpp" />
+    <ClCompile Include="D:\Desktop\librealsense\src\global_timestamp_reader.cpp" />
+    <ClCompile Include="D:\Desktop\librealsense\src\hdr-config.cpp" />
+    <ClCompile Include="D:\Desktop\librealsense\src\hw-monitor.cpp" />
+    <ClCompile Include="D:\Desktop\librealsense\src\image.cpp" />
+    <ClCompile Include="D:\Desktop\librealsense\src\image-avx.cpp" />
+    <ClCompile Include="D:\Desktop\librealsense\src\log.cpp" />
+    <ClCompile Include="D:\Desktop\librealsense\src\option.cpp" />
+    <ClCompile Include="D:\Desktop\librealsense\src\rs.cpp" />
+    <ClCompile Include="D:\Desktop\librealsense\src\sensor.cpp" />
+    <ClCompile Include="D:\Desktop\librealsense\src\software-device.cpp" />
+    <ClCompile Include="D:\Desktop\librealsense\src\source.cpp" />
+    <ClCompile Include="D:\Desktop\librealsense\src\stream.cpp" />
+    <ClCompile Include="D:\Desktop\librealsense\src\sync.cpp" />
+    <ClCompile Include="D:\Desktop\librealsense\src\terminal-parser.cpp" />
+    <ClCompile Include="D:\Desktop\librealsense\src\types.cpp" />
+    <ClCompile Include="D:\Desktop\librealsense\src\verify.c">
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="D:\Desktop\librealsense\src\depth-to-rgb-calibration.cpp" />
+    <ClInclude Include="D:\Desktop\librealsense\src\algo.h" />
+    <ClInclude Include="D:\Desktop\librealsense\src\api.h" />
+    <ClInclude Include="D:\Desktop\librealsense\src\archive.h" />
+    <ClInclude Include="D:\Desktop\librealsense\src\backend.h" />
+    <ClInclude Include="D:\Desktop\librealsense\src\concurrency.h" />
+    <ClInclude Include="D:\Desktop\librealsense\src\context.h" />
+    <ClInclude Include="D:\Desktop\librealsense\src\device.h" />
+    <ClInclude Include="D:\Desktop\librealsense\src\device_hub.h" />
+    <ClInclude Include="D:\Desktop\librealsense\src\environment.h" />
+    <ClInclude Include="D:\Desktop\librealsense\src\log.h" />
+    <ClInclude Include="D:\Desktop\librealsense\src\error-handling.h" />
+    <ClInclude Include="D:\Desktop\librealsense\src\firmware_logger_device.h" />
+    <ClInclude Include="D:\Desktop\librealsense\src\frame-archive.h" />
+    <ClInclude Include="D:\Desktop\librealsense\src\global_timestamp_reader.h" />
+    <ClInclude Include="D:\Desktop\librealsense\src\hdr-config.h" />
+    <ClInclude Include="D:\Desktop\librealsense\src\hw-monitor.h" />
+    <ClInclude Include="D:\Desktop\librealsense\src\image.h" />
+    <ClInclude Include="D:\Desktop\librealsense\src\image-avx.h" />
+    <ClInclude Include="D:\Desktop\librealsense\src\metadata.h" />
+    <ClInclude Include="D:\Desktop\librealsense\src\metadata-parser.h" />
+    <ClInclude Include="D:\Desktop\librealsense\src\option.h" />
+    <ClInclude Include="D:\Desktop\librealsense\src\sensor.h" />
+    <ClInclude Include="D:\Desktop\librealsense\src\software-device.h" />
+    <ClInclude Include="D:\Desktop\librealsense\src\source.h" />
+    <ClInclude Include="D:\Desktop\librealsense\src\stream.h" />
+    <ClInclude Include="D:\Desktop\librealsense\src\sync.h" />
+    <ClInclude Include="D:\Desktop\librealsense\src\terminal-parser.h" />
+    <ClInclude Include="D:\Desktop\librealsense\src\types.h" />
+    <ClInclude Include="D:\Desktop\librealsense\src\command_transfer.h" />
+    <ClInclude Include="D:\Desktop\librealsense\src\auto-calibrated-device.h" />
+    <ClInclude Include="D:\Desktop\librealsense\src\device-calibration.h" />
+    <ClInclude Include="D:\Desktop\librealsense\src\calibrated-sensor.h" />
+    <ClInclude Include="D:\Desktop\librealsense\src\serializable-interface.h" />
+    <ClInclude Include="D:\Desktop\librealsense\src\depth-to-rgb-calibration.h" />
+    <ClCompile Include="D:\Desktop\librealsense\third-party\sqlite\sqlite3.c">
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClInclude Include="D:\Desktop\librealsense\third-party\sqlite\sqlite3.h" />
+    <ClCompile Include="D:\Desktop\librealsense\third-party\easyloggingpp\src\easylogging++.cc" />
+    <ClInclude Include="D:\Desktop\librealsense\third-party\easyloggingpp\src\easylogging++.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="D:\Desktop\librealsense\build\ZERO_CHECK.vcxproj">
+      <Project>{E9ECF5A3-D6C5-3C1E-A39C-B1B588B5E85E}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="D:\Desktop\librealsense\build\common\fw\fw.vcxproj">
+      <Project>{45A0AAEB-7DF2-31E8-9FD1-73BAA2193E15}</Project>
+      <Name>fw</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Desktop\librealsense\build\libusb.vcxproj">
+      <Project>{94601B9D-8843-3F66-99C2-8F3A7FA2A320}</Project>
+      <Name>libusb</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="D:\Desktop\librealsense\build\third-party\realsense-file\realsense-file.vcxproj">
+      <Project>{BDB4CCB4-E3A5-379E-B62A-78BF8AFB650B}</Project>
+      <Name>realsense-file</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

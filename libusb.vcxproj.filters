@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="D:\Desktop\librealsense\build\CMakeFiles\5c7dce35ec7dbd0b69c485a7cfed03ce\libusb-mkdir.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\Desktop\librealsense\build\CMakeFiles\5c7dce35ec7dbd0b69c485a7cfed03ce\libusb-download.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\Desktop\librealsense\build\CMakeFiles\5c7dce35ec7dbd0b69c485a7cfed03ce\libusb-update.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\Desktop\librealsense\build\CMakeFiles\5c7dce35ec7dbd0b69c485a7cfed03ce\libusb-patch.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\Desktop\librealsense\build\CMakeFiles\5c7dce35ec7dbd0b69c485a7cfed03ce\libusb-configure.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\Desktop\librealsense\build\CMakeFiles\5c7dce35ec7dbd0b69c485a7cfed03ce\libusb-build.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\Desktop\librealsense\build\CMakeFiles\5c7dce35ec7dbd0b69c485a7cfed03ce\libusb-install.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\Desktop\librealsense\build\CMakeFiles\5c7dce35ec7dbd0b69c485a7cfed03ce\libusb-test.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\Desktop\librealsense\build\CMakeFiles\3385042e81e1ed83641c541b79fa1b9f\libusb-complete.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\Desktop\librealsense\build\CMakeFiles\1a88e87cb91075ceac461d870d9506b4\libusb.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\Desktop\librealsense\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="D:\Desktop\librealsense\build\CMakeFiles\libusb" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{67903955-CC84-3E0B-A495-61BFD702CC4A}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

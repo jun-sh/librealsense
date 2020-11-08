@@ -1,0 +1,46 @@
+{
+	"sources" : 
+	[
+		{
+			"file" : "D:/Desktop/librealsense/build/CMakeFiles/libusb"
+		},
+		{
+			"file" : "D:/Desktop/librealsense/build/CMakeFiles/1a88e87cb91075ceac461d870d9506b4/libusb.rule"
+		},
+		{
+			"file" : "D:/Desktop/librealsense/build/CMakeFiles/3385042e81e1ed83641c541b79fa1b9f/libusb-complete.rule"
+		},
+		{
+			"file" : "D:/Desktop/librealsense/build/CMakeFiles/5c7dce35ec7dbd0b69c485a7cfed03ce/libusb-install.rule"
+		},
+		{
+			"file" : "D:/Desktop/librealsense/build/CMakeFiles/5c7dce35ec7dbd0b69c485a7cfed03ce/libusb-mkdir.rule"
+		},
+		{
+			"file" : "D:/Desktop/librealsense/build/CMakeFiles/5c7dce35ec7dbd0b69c485a7cfed03ce/libusb-download.rule"
+		},
+		{
+			"file" : "D:/Desktop/librealsense/build/CMakeFiles/5c7dce35ec7dbd0b69c485a7cfed03ce/libusb-update.rule"
+		},
+		{
+			"file" : "D:/Desktop/librealsense/build/CMakeFiles/5c7dce35ec7dbd0b69c485a7cfed03ce/libusb-patch.rule"
+		},
+		{
+			"file" : "D:/Desktop/librealsense/build/CMakeFiles/5c7dce35ec7dbd0b69c485a7cfed03ce/libusb-configure.rule"
+		},
+		{
+			"file" : "D:/Desktop/librealsense/build/CMakeFiles/5c7dce35ec7dbd0b69c485a7cfed03ce/libusb-build.rule"
+		},
+		{
+			"file" : "D:/Desktop/librealsense/build/CMakeFiles/5c7dce35ec7dbd0b69c485a7cfed03ce/libusb-test.rule"
+		}
+	],
+	"target" : 
+	{
+		"labels" : 
+		[
+			"libusb"
+		],
+		"name" : "libusb"
+	}
+}

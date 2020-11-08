@@ -1,0 +1,215 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="D:\Desktop\librealsense\common\model-views.cpp">
+      <Filter>Utils</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Desktop\librealsense\common\notifications.cpp">
+      <Filter>Utils</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Desktop\librealsense\common\calibration-model.cpp">
+      <Filter>Utils</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Desktop\librealsense\common\viewer.cpp">
+      <Filter>Utils</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Desktop\librealsense\common\ux-window.cpp">
+      <Filter>Utils</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Desktop\librealsense\common\ux-alignment.cpp">
+      <Filter>Utils</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Desktop\librealsense\common\opengl3.cpp">
+      <Filter>Utils</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Desktop\librealsense\common\rs-config.cpp">
+      <Filter>Utils</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Desktop\librealsense\common\os.cpp">
+      <Filter>Utils</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Desktop\librealsense\common\fw-update-helper.cpp">
+      <Filter>Utils</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Desktop\librealsense\common\metadata-helper.cpp">
+      <Filter>Utils</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Desktop\librealsense\common\output-model.cpp">
+      <Filter>Utils</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Desktop\librealsense\common\skybox.cpp">
+      <Filter>Utils</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Desktop\librealsense\common\measurement.cpp">
+      <Filter>Utils</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Desktop\librealsense\common\on-chip-calib.cpp">
+      <Filter>Utils</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Desktop\librealsense\common\updates-model.cpp">
+      <Filter>Utils</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Desktop\librealsense\common\cah-model.cpp">
+      <Filter>Utils</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Desktop\librealsense\common\sw-update\http-downloader.cpp">
+      <Filter>SW-Update</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Desktop\librealsense\common\sw-update\dev-updates-profile.cpp">
+      <Filter>SW-Update</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Desktop\librealsense\common\sw-update\versions-db-manager.cpp">
+      <Filter>SW-Update</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Desktop\librealsense\tools\depth-quality\rs-depth-quality.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Desktop\librealsense\tools\depth-quality\depth-quality-model.cpp">
+      <Filter>Utils</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Desktop\librealsense\third-party\imgui\imgui.cpp">
+      <Filter>3rd Party</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Desktop\librealsense\third-party\imgui\imgui_draw.cpp">
+      <Filter>3rd Party</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Desktop\librealsense\third-party\imgui\imgui_impl_glfw.cpp">
+      <Filter>3rd Party</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Desktop\librealsense\third-party\glad\glad.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Desktop\librealsense\third-party\tinyfiledialogs\tinyfiledialogs.c">
+      <Filter>3rd Party</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Desktop\librealsense\third-party\easyloggingpp\src\easylogging++.cc">
+      <Filter>EasyLogging++</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Desktop\librealsense\common\windows-app-bootstrap.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="D:\Desktop\librealsense\common\rendering.h">
+      <Filter>Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Desktop\librealsense\common\model-views.h">
+      <Filter>Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Desktop\librealsense\common\notifications.h">
+      <Filter>Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Desktop\librealsense\common\calibration-model.h">
+      <Filter>Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Desktop\librealsense\common\viewer.h">
+      <Filter>Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Desktop\librealsense\common\ux-window.h">
+      <Filter>Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Desktop\librealsense\common\ux-alignment.h">
+      <Filter>Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Desktop\librealsense\common\opengl3.h">
+      <Filter>Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Desktop\librealsense\common\rs-config.h">
+      <Filter>Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Desktop\librealsense\common\os.h">
+      <Filter>Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Desktop\librealsense\common\fw-update-helper.h">
+      <Filter>Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Desktop\librealsense\common\metadata-helper.h">
+      <Filter>Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Desktop\librealsense\common\output-model.h">
+      <Filter>Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Desktop\librealsense\common\skybox.h">
+      <Filter>Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Desktop\librealsense\common\measurement.h">
+      <Filter>Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Desktop\librealsense\common\on-chip-calib.h">
+      <Filter>Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Desktop\librealsense\common\decompress-huffman.h">
+      <Filter>Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Desktop\librealsense\common\updates-model.h">
+      <Filter>Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Desktop\librealsense\common\cah-model.h">
+      <Filter>Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Desktop\librealsense\common\sw-update\http-downloader.h">
+      <Filter>SW-Update</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Desktop\librealsense\common\sw-update\dev-updates-profile.h">
+      <Filter>SW-Update</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Desktop\librealsense\common\sw-update\versions-db-manager.h">
+      <Filter>SW-Update</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Desktop\librealsense\tools\depth-quality\depth-quality-model.h">
+      <Filter>Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Desktop\librealsense\tools\depth-quality\depth-metrics.h">
+      <Filter>Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Desktop\librealsense\common\realsense-ui-advanced-mode.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Desktop\librealsense\third-party\imgui\imgui-fonts-karla.hpp">
+      <Filter>3rd Party</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Desktop\librealsense\third-party\imgui\imgui-fonts-fontawesome.hpp">
+      <Filter>3rd Party</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Desktop\librealsense\third-party\tinyfiledialogs\tinyfiledialogs.h">
+      <Filter>3rd Party</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Desktop\librealsense\third-party\easyloggingpp\src\easylogging++.h">
+      <Filter>EasyLogging++</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Desktop\librealsense\tools\depth-quality\res\resource.h">
+      <Filter>Resources</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\Desktop\librealsense\tools\depth-quality\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="D:\Desktop\librealsense\tools\depth-quality\res\realsense-viewer.rc">
+      <Filter>Resources</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="3rd Party">
+      <UniqueIdentifier>{7817CB16-AE75-37AD-B671-96942AA4B4A2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="EasyLogging++">
+      <UniqueIdentifier>{6B3325F5-7E81-369C-BAE1-935F80603663}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{284E8218-4F86-3856-B7B7-63D1DD3F7485}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resources">
+      <UniqueIdentifier>{61EF9C42-281F-30EA-B651-BA37C966B7FD}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="SW-Update">
+      <UniqueIdentifier>{78C2377D-19C6-3B8A-A1D2-4352737134B2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{CEC3990D-8F57-3129-AB5F-0D47994E7C08}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Utils">
+      <UniqueIdentifier>{B4C02059-FB46-36CA-B39C-E47CF8D2A039}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

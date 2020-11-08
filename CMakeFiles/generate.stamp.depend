@@ -1,0 +1,83 @@
+# CMake generation dependency list for this directory.
+C:/Program Files/CMake/share/cmake-3.17/Modules/BasicConfigVersion-AnyNewerVersion.cmake.in
+C:/Program Files/CMake/share/cmake-3.17/Modules/CMakeCInformation.cmake
+C:/Program Files/CMake/share/cmake-3.17/Modules/CMakeCXXInformation.cmake
+C:/Program Files/CMake/share/cmake-3.17/Modules/CMakeCheckCompilerFlagCommonPatterns.cmake
+C:/Program Files/CMake/share/cmake-3.17/Modules/CMakeCommonLanguageInclude.cmake
+C:/Program Files/CMake/share/cmake-3.17/Modules/CMakeGenericSystem.cmake
+C:/Program Files/CMake/share/cmake-3.17/Modules/CMakeInitializeConfigs.cmake
+C:/Program Files/CMake/share/cmake-3.17/Modules/CMakeLanguageInformation.cmake
+C:/Program Files/CMake/share/cmake-3.17/Modules/CMakePackageConfigHelpers.cmake
+C:/Program Files/CMake/share/cmake-3.17/Modules/CMakeRCInformation.cmake
+C:/Program Files/CMake/share/cmake-3.17/Modules/CMakeSystemSpecificInformation.cmake
+C:/Program Files/CMake/share/cmake-3.17/Modules/CMakeSystemSpecificInitialize.cmake
+C:/Program Files/CMake/share/cmake-3.17/Modules/CheckCXXCompilerFlag.cmake
+C:/Program Files/CMake/share/cmake-3.17/Modules/CheckCXXSourceCompiles.cmake
+C:/Program Files/CMake/share/cmake-3.17/Modules/Compiler/CMakeCommonCompilerMacros.cmake
+C:/Program Files/CMake/share/cmake-3.17/Modules/Compiler/MSVC-C.cmake
+C:/Program Files/CMake/share/cmake-3.17/Modules/Compiler/MSVC-CXX.cmake
+C:/Program Files/CMake/share/cmake-3.17/Modules/ExternalProject.cmake
+C:/Program Files/CMake/share/cmake-3.17/Modules/FindGit.cmake
+C:/Program Files/CMake/share/cmake-3.17/Modules/FindPackageHandleStandardArgs.cmake
+C:/Program Files/CMake/share/cmake-3.17/Modules/FindPackageMessage.cmake
+C:/Program Files/CMake/share/cmake-3.17/Modules/GNUInstallDirs.cmake
+C:/Program Files/CMake/share/cmake-3.17/Modules/Platform/Windows-MSVC-C.cmake
+C:/Program Files/CMake/share/cmake-3.17/Modules/Platform/Windows-MSVC-CXX.cmake
+C:/Program Files/CMake/share/cmake-3.17/Modules/Platform/Windows-MSVC.cmake
+C:/Program Files/CMake/share/cmake-3.17/Modules/Platform/Windows.cmake
+C:/Program Files/CMake/share/cmake-3.17/Modules/Platform/WindowsPaths.cmake
+C:/Program Files/CMake/share/cmake-3.17/Modules/RepositoryInfo.txt.in
+C:/Program Files/CMake/share/cmake-3.17/Modules/WriteBasicConfigVersionFile.cmake
+D:/Desktop/librealsense/CMake/connectivity_check.cmake
+D:/Desktop/librealsense/CMake/embedd_udev_rules.cmake
+D:/Desktop/librealsense/CMake/external_libusb.cmake
+D:/Desktop/librealsense/CMake/global_config.cmake
+D:/Desktop/librealsense/CMake/include_os.cmake
+D:/Desktop/librealsense/CMake/install_config.cmake
+D:/Desktop/librealsense/CMake/libusb_config.cmake
+D:/Desktop/librealsense/CMake/lrs_macros.cmake
+D:/Desktop/librealsense/CMake/lrs_options.cmake
+D:/Desktop/librealsense/CMake/realsense2Config.cmake.in
+D:/Desktop/librealsense/CMake/version_config.cmake
+D:/Desktop/librealsense/CMake/windows_config.cmake
+D:/Desktop/librealsense/CMakeLists.txt
+D:/Desktop/librealsense/build/CMakeFiles/3.17.5/CMakeCCompiler.cmake
+D:/Desktop/librealsense/build/CMakeFiles/3.17.5/CMakeCXXCompiler.cmake
+D:/Desktop/librealsense/build/CMakeFiles/3.17.5/CMakeRCCompiler.cmake
+D:/Desktop/librealsense/build/CMakeFiles/3.17.5/CMakeSystem.cmake
+D:/Desktop/librealsense/build/libusb-prefix/tmp/libusb-cfgcmd.txt.in
+D:/Desktop/librealsense/cmake_uninstall.cmake
+D:/Desktop/librealsense/config/librealsense.pc.in
+D:/Desktop/librealsense/include/CMakeLists.txt
+D:/Desktop/librealsense/src/CMakeLists.txt
+D:/Desktop/librealsense/src/algo/CMakeLists.txt
+D:/Desktop/librealsense/src/algo/depth-to-rgb-calibration/CMakeLists.txt
+D:/Desktop/librealsense/src/core/CMakeLists.txt
+D:/Desktop/librealsense/src/ds5/CMakeLists.txt
+D:/Desktop/librealsense/src/fw-logs/CMakeLists.txt
+D:/Desktop/librealsense/src/fw-update/CMakeLists.txt
+D:/Desktop/librealsense/src/ivcam/CMakeLists.txt
+D:/Desktop/librealsense/src/l500/CMakeLists.txt
+D:/Desktop/librealsense/src/media/CMakeLists.txt
+D:/Desktop/librealsense/src/mf/CMakeLists.txt
+D:/Desktop/librealsense/src/mock/CMakeLists.txt
+D:/Desktop/librealsense/src/pipeline/CMakeLists.txt
+D:/Desktop/librealsense/src/proc/CMakeLists.txt
+D:/Desktop/librealsense/src/proc/sse/CMakeLists.txt
+D:/Desktop/librealsense/src/res/CMakeLists.txt
+D:/Desktop/librealsense/src/tm2/CMakeLists.txt
+D:/Desktop/librealsense/src/usb/CMakeLists.txt
+D:/Desktop/librealsense/src/win/CMakeLists.txt
+D:/Desktop/librealsense/src/winusb/CMakeLists.txt
+D:/Desktop/librealsense/third-party/CMakeLists.txt
+D:/Desktop/librealsense/third-party/easyloggingpp/CMakeLists.txt
+D:/Desktop/librealsense/third-party/realsense-file/config.cmake
+D:/Desktop/librealsense/third-party/realsense-file/rosbag/config.cmake
+D:/Desktop/librealsense/third-party/realsense-file/rosbag/console_bridge/config.cmake
+D:/Desktop/librealsense/third-party/realsense-file/rosbag/cpp_common/config.cmake
+D:/Desktop/librealsense/third-party/realsense-file/rosbag/rosbag_storage/config.cmake
+D:/Desktop/librealsense/third-party/realsense-file/rosbag/roscpp_serialization/config.cmake
+D:/Desktop/librealsense/third-party/realsense-file/rosbag/roscpp_traits/config.cmake
+D:/Desktop/librealsense/third-party/realsense-file/rosbag/roslz4/config.cmake
+D:/Desktop/librealsense/third-party/realsense-file/rosbag/rostime/config.cmake
+D:/Desktop/librealsense/third-party/sqlite/CMakeLists.txt

@@ -1,0 +1,104 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="D:\Desktop\librealsense\src\gl\synthetic-stream-gl.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Desktop\librealsense\src\gl\yuy2rgb-gl.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Desktop\librealsense\src\gl\pointcloud-gl.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Desktop\librealsense\src\gl\rs-gl.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Desktop\librealsense\third-party\glad\glad.c">
+      <Filter>3rd Party</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Desktop\librealsense\common\opengl3.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Desktop\librealsense\src\gl\pc-shader.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Desktop\librealsense\src\gl\camera-shader.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Desktop\librealsense\src\gl\upload.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Desktop\librealsense\src\gl\colorizer-gl.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Desktop\librealsense\src\gl\align-gl.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Desktop\librealsense\third-party\realsense-file\lz4\lz4.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Desktop\librealsense\third-party\easyloggingpp\src\easylogging++.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="D:\Desktop\librealsense\src\gl\synthetic-stream-gl.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Desktop\librealsense\src\gl\yuy2rgb-gl.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Desktop\librealsense\src\gl\pointcloud-gl.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Desktop\librealsense\include\librealsense2-gl\rs_processing_gl.h">
+      <Filter>API</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Desktop\librealsense\include\librealsense2-gl\rs_processing_gl.hpp">
+      <Filter>API</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Desktop\librealsense\common\opengl3.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Desktop\librealsense\src\gl\pc-shader.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Desktop\librealsense\src\gl\camera-shader.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Desktop\librealsense\src\gl\upload.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Desktop\librealsense\src\gl\colorizer-gl.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Desktop\librealsense\src\gl\align-gl.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Desktop\librealsense\third-party\realsense-file\lz4\lz4.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\Desktop\librealsense\src\gl\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="D:\Desktop\librealsense\src\gl\realsense-gl.def">
+      <Filter>API</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="3rd Party">
+      <UniqueIdentifier>{7817CB16-AE75-37AD-B671-96942AA4B4A2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="API">
+      <UniqueIdentifier>{96C100E2-31B3-3020-9F49-AA6785C35F4B}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{284E8218-4F86-3856-B7B7-63D1DD3F7485}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{CEC3990D-8F57-3129-AB5F-0D47994E7C08}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,4 @@
+D:/Desktop/librealsense/build/libusb-prefix/src/libusb-build/CMakeFiles/usb.dir
+D:/Desktop/librealsense/build/libusb-prefix/src/libusb-build/CMakeFiles/INSTALL.dir
+D:/Desktop/librealsense/build/libusb-prefix/src/libusb-build/CMakeFiles/ALL_BUILD.dir
+D:/Desktop/librealsense/build/libusb-prefix/src/libusb-build/CMakeFiles/ZERO_CHECK.dir
